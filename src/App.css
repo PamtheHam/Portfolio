@@ -1,0 +1,136 @@
+* {
+  font-family: "Merriweather", serif;
+  color: #352921;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background-color: #C9B09A;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  min-height: calc(100vh - 114px);
+}
+
+.navbar {
+  background-color: #885A3A;
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  font-family: "Birthstone", cursive;
+  text-decoration: none;
+  color: #F7E6D9;
+  font-size: 60px;
+}
+
+.nav-link:hover {
+  color: rgb(47, 47, 47);
+}
+
+.icon-size {
+  font-size: 35px;
+  display: inline;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.name-div {
+  line-height: 2;
+  letter-spacing: 1px;
+  height: auto;
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgb(115, 133, 114);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img {
+  width: auto;
+  height: 350px;
+  border: solid 2px rgb(47, 47, 47);
+  border-radius: 10px;
+}
+
+.headshot {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 350px;
+  border-radius: 60%;
+  border: solid rgb(115, 133, 114) 1px;
+}
+
+.about-paragraph {
+  line-height: 1.5;
+  text-indent: 50px;
+  letter-spacing: 2px;
+  padding: 0px 15px;
+}
+
+.row-auth-wrapper {
+  margin: auto;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0px 10px;
+  padding: 0px 30px;
+  width: 100%;
+  border-radius: 10px;
+}
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 10px 0px;
+  width: 20%;
+  color: white;
+  background-color: rgb(47, 47, 47);
+  border-radius: 10px;
+}
+
+.home-button {
+  color: white;
+  text-decoration: none;
+  font-family: "Merriweather";
+}
+
+.button:hover {
+  background-color: rgb(115, 133, 114);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1800px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 480px) {
+}
