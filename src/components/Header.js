@@ -9,34 +9,25 @@ function Header() {
       <Avatar
         alt="Pamela Hammond"
         src={PamAvatar}
-        sx={{ width: 60, height: 60 }}
+        sx={{
+          width: 100,
+          height: 100,
+        }}
         variant="square"
       />
-      <ul>
-        <li>
-          <a href="#about" underline="none" className="nav-link">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#skills" underline="none" className="nav-link">
-            Skills
-          </a>
-        </li>
-        <li>
-          <a href="#projects" underline="none" className="nav-link">
-            Projects
-          </a>
-        </li>
-        <li>
-          <a href="#education" underline="none" className="nav-link">
-            Education
-          </a>
-        </li>
-        <li>
-          <ContactUs />
-        </li>
-      </ul>
+      <a href="#about" className="nav-link">
+        About
+      </a>
+      <a href="#skills" className="nav-link">
+        Skills
+      </a>
+      <a href="#projects" className="nav-link">
+        Projects
+      </a>
+      <a href="#education" className="nav-link">
+        Education
+      </a>
+      <ContactUs />
     </nav>
   );
 }

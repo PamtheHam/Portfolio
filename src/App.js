@@ -11,11 +11,11 @@ function App() {
       <header>
         <Header />
       </header>
-      <main>
+      <main className="main">
         <NameCard />
         <PortfolioCards />
       </main>
-      <footer>
+      <footer className="main">
         <Footer />
       </footer>
     </>

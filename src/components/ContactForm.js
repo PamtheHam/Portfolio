@@ -65,7 +65,11 @@ const ContactUs = () => {
 
   return (
     <div>
-      <button className="nav-link" onClick={handleOpen}>
+      <button
+        className="nav-link"
+        style={{ cursor: "pointer" }}
+        onClick={handleOpen}
+      >
         Contact
       </button>
       <Modal

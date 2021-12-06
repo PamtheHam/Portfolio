@@ -20,29 +20,55 @@ main {
 .navbar {
   background-color: #885a3a;
   margin-bottom: 30px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 180px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
 
-.nav-link {
+.navbar a {
+  padding: 6px 8px 6px 16px;
   font-family: "Birthstone", cursive;
   text-decoration: none;
   color: #f7e6d9;
-  font-size: 60px;
+  font-size: 35px;
+  display: block;
 }
 
-.nav-link:hover {
+.nav-link {
+  padding: 6px 8px 6px 16px;
+  font-family: "Birthstone", cursive;
+  text-decoration: none;
+  color: #f7e6d9;
+  font-size: 35px;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.navbar a:hover {
   color: rgb(47, 47, 47);
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style page content */
+.main {
+  margin-left: 180px; /* Same as the width of the sidebar */
 }
 
 .icon-size {
   font-size: 35px;
   display: inline;
   padding: 10px;
-}
-
-ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
 }
 
 .footer {
@@ -110,6 +136,10 @@ button {
   border: none;
 }
 
+button:hover {
+  color: rgb(47, 47, 47);
+}
+
 .education {
   line-height: 1.5;
   text-indent: 50px;
@@ -125,5 +155,11 @@ button {
 @media only screen and (max-width: 768px) {
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-height: 480px) {
+  .navbar {
+    padding-top: 15px;
+  }
+  .navbar a {
+    font-size: 18px;
+  }
 }
