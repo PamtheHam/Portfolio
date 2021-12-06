@@ -8,7 +8,7 @@ import ReactTaskTrackerCard from "./projects/ReactTaskTrackerCard";
 
 const PortfolioCards = () => {
   return (
-    <div id="portfolio">
+    <div id="projects">
       <ReactTaskTrackerCard />
       <PFFCard />
       <SkyGazerCard />

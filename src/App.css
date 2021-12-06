@@ -7,24 +7,25 @@
 }
 
 body {
-  background-color: #C9B09A;
+  background-color: #c9b09a;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
+
 main {
   min-height: calc(100vh - 114px);
 }
 
 .navbar {
-  background-color: #885A3A;
+  background-color: #885a3a;
   margin-bottom: 30px;
 }
 
 .nav-link {
   font-family: "Birthstone", cursive;
   text-decoration: none;
-  color: #F7E6D9;
+  color: #f7e6d9;
   font-size: 60px;
 }
 
@@ -42,12 +43,6 @@ ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
-}
-
-.name-div {
-  line-height: 2;
-  letter-spacing: 1px;
-  height: auto;
 }
 
 .footer {
@@ -114,7 +109,7 @@ ul {
   border-radius: 10px;
 }
 
-.home-button {
+.resume-button {
   color: white;
   text-decoration: none;
   font-family: "Merriweather";
@@ -122,6 +117,11 @@ ul {
 
 .button:hover {
   background-color: rgb(115, 133, 114);
+}
+
+button {
+  text-decoration: none;
+  background-color: #885a3a;
 }
 
 /* media queries */

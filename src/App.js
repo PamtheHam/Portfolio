@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ContactUs from "./components/ContactForm";
 import NameCard from "./components/NameCard";
 import PortfolioCards from "./components/PortfolioCards";
 
@@ -15,7 +14,6 @@ function App() {
       <main>
         <NameCard />
         <PortfolioCards />
-        <ContactUs />
       </main>
       <footer>
         <Footer />

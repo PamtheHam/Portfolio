@@ -1,29 +1,41 @@
 import React from "react";
-import "materialize-css";
+import { Avatar } from "@mui/material";
+import PamAvatar from "./assets/Avatar.jpg";
+import { Link } from "@mui/material";
+import ContactUs from "./ContactForm";
 
 function Header() {
   return (
     <nav className="navbar">
+      <Avatar
+        alt="Pamela Hammond"
+        src={PamAvatar}
+        sx={{ width: 60, height: 60 }}
+        variant="square"
+      />
       <ul>
         <li>
-          <a href="#home" className="nav-link">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#about" className="nav-link">
+          <Link href="#about" underline="none" className="nav-link">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#portfolio" className="nav-link">
-            Portfolio
-          </a>
+          <Link href="#skills" underline="none" className="nav-link">
+            Skills
+          </Link>
         </li>
         <li>
-          <a href="#contact" className="nav-link">
-            Contact
-          </a>
+          <Link href="#projects" underline="none" className="nav-link">
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link href="#education" underline="none" className="nav-link">
+            Education
+          </Link>
+        </li>
+        <li>
+          <ContactUs />
         </li>
       </ul>
     </nav>
