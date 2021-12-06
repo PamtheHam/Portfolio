@@ -55,22 +55,6 @@ ul {
   justify-content: center;
 }
 
-.about-img {
-  width: auto;
-  height: 350px;
-  border: solid 2px rgb(47, 47, 47);
-  border-radius: 10px;
-}
-
-.headshot {
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 350px;
-  border-radius: 60%;
-  border: solid rgb(115, 133, 114) 1px;
-}
-
 .about-paragraph {
   line-height: 1.5;
   text-indent: 50px;
@@ -122,6 +106,15 @@ ul {
 button {
   text-decoration: none;
   background-color: #885a3a;
+  outline: none;
+  border: none;
+}
+
+.education {
+  line-height: 1.5;
+  text-indent: 50px;
+  letter-spacing: 2px;
+  padding: 0px 15px;
 }
 
 /* media queries */

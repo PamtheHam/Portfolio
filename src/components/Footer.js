@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <div className="footer">
       <div>
         <div className="icon-size">
           <a href="tel:816-678-1651">
@@ -36,7 +36,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

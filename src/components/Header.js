@@ -1,7 +1,6 @@
 import React from "react";
 import { Avatar } from "@mui/material";
 import PamAvatar from "./assets/Avatar.jpg";
-import { Link } from "@mui/material";
 import ContactUs from "./ContactForm";
 
 function Header() {
@@ -15,24 +14,24 @@ function Header() {
       />
       <ul>
         <li>
-          <Link href="#about" underline="none" className="nav-link">
+          <a href="#about" underline="none" className="nav-link">
             About
-          </Link>
+          </a>
         </li>
         <li>
-          <Link href="#skills" underline="none" className="nav-link">
+          <a href="#skills" underline="none" className="nav-link">
             Skills
-          </Link>
+          </a>
         </li>
         <li>
-          <Link href="#projects" underline="none" className="nav-link">
+          <a href="#projects" underline="none" className="nav-link">
             Projects
-          </Link>
+          </a>
         </li>
         <li>
-          <Link href="#education" underline="none" className="nav-link">
+          <a href="#education" underline="none" className="nav-link">
             Education
-          </Link>
+          </a>
         </li>
         <li>
           <ContactUs />
