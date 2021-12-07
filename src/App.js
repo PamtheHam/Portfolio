@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NameCard from "./components/NameCard";
 import PortfolioCards from "./components/PortfolioCards";
+import Education from "./components/Education";
+import Skills from "./Skills";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       </header>
       <main className="main">
         <NameCard />
+        <Skills />
         <PortfolioCards />
+        <Education />
       </main>
       <footer className="main">
         <Footer />

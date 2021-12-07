@@ -31,10 +31,10 @@ const ContactUs = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
-    bgcolor: "background.paper",
-    border: "2px solid #000",
-    boxShadow: 24,
+    width: 350,
+    bgcolor: "#f7e6d9",
+    border: "1px solid #000",
+    boxShadow: 25,
     p: 4,
   };
 
@@ -75,54 +75,52 @@ const ContactUs = () => {
       <Modal
         open={open}
         onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        aria-labelledby="Contact Me Form"
+        aria-describedby="a modal that has input for contact information"
       >
         <Box sx={style}>
-          <div id="contact" className="row-auth-wrapper">
-            <div className="form-wrapper">
-              <div className="form">
-                <form ref={form} onSubmit={sendEmail}>
-                  <p className="nav-link">Contact Me</p>
-                  <label>Name</label>
-                  <TextField
-                    fullWidth
-                    id="outlined-required"
-                    type="text"
-                    value={formState.user_name}
-                    name="user_name"
-                    onChange={handleChange}
-                  />
-                  <label>Email</label>
-                  <TextField
-                    fullWidth
-                    id="outlined-required"
-                    type="email"
-                    value={formState.user_email}
-                    name="user_email"
-                    onChange={handleChange}
-                  />
-                  <label>Message</label>
-                  <TextField
-                    fullWidth
-                    id="outlined-required"
-                    value={formState.message}
-                    name="message"
-                    onChange={handleChange}
-                  />
-                  <button className="button" type="submit" value="Send">
-                    Send
-                  </button>
-                  <button
-                    className="button"
-                    type="submit"
-                    value="Close"
-                    onClick={handleClose}
-                  >
-                    Close
-                  </button>
-                </form>
-              </div>
+          <div id="contact">
+            <div className="form">
+              <form ref={form} onSubmit={sendEmail}>
+                <p className="contact-title">Contact Me</p>
+                <label>Name</label>
+                <TextField
+                  fullWidth
+                  id="outlined-required"
+                  type="text"
+                  value={formState.user_name}
+                  name="user_name"
+                  onChange={handleChange}
+                />
+                <label>Email</label>
+                <TextField
+                  fullWidth
+                  id="outlined-required"
+                  type="email"
+                  value={formState.user_email}
+                  name="user_email"
+                  onChange={handleChange}
+                />
+                <label>Message</label>
+                <TextField
+                  fullWidth
+                  id="outline-required"
+                  value={formState.message}
+                  name="message"
+                  onChange={handleChange}
+                />
+                <button className="button " type="submit" value="Send">
+                  Send
+                </button>
+                <button
+                  className="button"
+                  type="submit"
+                  value="Close"
+                  onClick={handleClose}
+                >
+                  Close
+                </button>
+              </form>
             </div>
           </div>
         </Box>

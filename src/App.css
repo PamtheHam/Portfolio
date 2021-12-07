@@ -1,3 +1,4 @@
+/* element css */
 * {
   font-family: "Merriweather", serif;
   color: #352921;
@@ -17,6 +18,12 @@ main {
   min-height: calc(100vh - 114px);
 }
 
+/* Style page content */
+.main {
+  margin-left: 180px; /* Same as the width of the sidebar */
+}
+
+/* header */
 .navbar {
   background-color: #885a3a;
   margin-bottom: 30px;
@@ -48,7 +55,6 @@ main {
   display: block;
 }
 
-/* When you mouse over the navigation links, change their color */
 .navbar a:hover {
   color: rgb(47, 47, 47);
 }
@@ -60,17 +66,40 @@ main {
   justify-content: center;
 }
 
-/* Style page content */
-.main {
-  margin-left: 180px; /* Same as the width of the sidebar */
+/* about */
+.about-paragraph {
+  line-height: 1.5;
+  text-indent: 50px;
+  letter-spacing: 2px;
+  padding: 0px 15px;
 }
 
-.icon-size {
+/* skills */
+
+/* projects */
+
+/* education section */
+.education {
+  line-height: 1.5;
+  text-indent: 50px;
+  letter-spacing: 2px;
+  padding: 0px 15px;
+}
+
+/* contact me form */
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-family: "Birthstone", cursive;
   font-size: 35px;
-  display: inline;
-  padding: 10px;
 }
 
+/* footer */
 .footer {
   margin-top: 30px;
   padding: 20px;
@@ -81,54 +110,13 @@ main {
   justify-content: center;
 }
 
-.about-paragraph {
-  line-height: 1.5;
-  text-indent: 50px;
-  letter-spacing: 2px;
-  padding: 0px 15px;
+.icon-size {
+  font-size: 35px;
+  display: inline;
+  padding: 10px;
 }
 
-.row-auth-wrapper {
-  margin: auto;
-  padding: 0px 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.form-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 0px 10px;
-  padding: 0px 30px;
-  width: 100%;
-  border-radius: 10px;
-}
-.form {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.button {
-  margin-top: 10px;
-  padding: 10px 0px;
-  width: 20%;
-  color: white;
-  background-color: rgb(47, 47, 47);
-  border-radius: 10px;
-}
-
-.resume-button {
-  color: white;
-  text-decoration: none;
-  font-family: "Merriweather";
-}
-
-.button:hover {
-  background-color: rgb(115, 133, 114);
-}
-
+/* buttons */
 button {
   text-decoration: none;
   background-color: #885a3a;
@@ -140,15 +128,27 @@ button:hover {
   color: rgb(47, 47, 47);
 }
 
-.education {
-  line-height: 1.5;
-  text-indent: 50px;
-  letter-spacing: 2px;
-  padding: 0px 15px;
+.button {
+  margin: 0px 5px;
+  margin-top: 10px;
+  padding: 10px 0px;
+  width: 20%;
+  color: white;
+  background-color: rgb(47, 47, 47);
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: rgb(115, 133, 114);
+}
+
+.resume-button {
+  color: white;
+  text-decoration: none;
+  font-family: "Merriweather";
 }
 
 /* media queries */
-
 @media only screen and (max-width: 1800px) {
 }
 
