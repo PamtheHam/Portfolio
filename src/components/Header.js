@@ -1,12 +1,12 @@
 import React from "react";
 import { Avatar } from "@mui/material";
-import PamAvatar from "./assets/Avatar.jpg";
+import PamHeadshot from "./assets/Headshot.jpg";
 import ContactUs from "./ContactForm";
 
 function Header({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar">
-      <Avatar
+    <nav className="header">
+      {/* <Avatar
         alt="Pamela Hammond"
         src={PamAvatar}
         sx={{
@@ -14,12 +14,12 @@ function Header({ currentPage, handlePageChange }) {
           height: 100,
         }}
         variant="square"
-      />
+      /> */}
       <ul>
         <li>
           <a
             href="#about"
-            className="nav-link"
+            className="nav-links"
             onClick={() => handlePageChange("About")}
           >
             About
@@ -27,29 +27,11 @@ function Header({ currentPage, handlePageChange }) {
         </li>
         <li>
           <a
-            href="#skills"
-            className="nav-link"
-            onClick={() => handlePageChange("Skills")}
-          >
-            Skills
-          </a>
-        </li>
-        <li>
-          <a
             href="#projects"
-            className="nav-link"
+            className="nav-links"
             onClick={() => handlePageChange("Projects")}
           >
             Projects
-          </a>
-        </li>
-        <li>
-          <a
-            href="#education"
-            className="nav-link"
-            onClick={() => handlePageChange("Education")}
-          >
-            Education
           </a>
         </li>
         <li>

@@ -46,7 +46,7 @@ const Skills = () => {
     </div>
   );
   return (
-    <div id="skills">
+    <div>
       <div>
         <h2>&lt;Skills&gt;</h2>
         <div>

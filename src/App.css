@@ -1,6 +1,5 @@
 /* element css */
 * {
-  font-family: "Merriweather", serif;
   color: #352921;
   margin: 0;
   padding: 0;
@@ -19,23 +18,9 @@ main {
 }
 
 /* header */
-
-.navbar {
+.header {
   background-color: #885a3a;
   margin-bottom: 30px;
-}
-
-.navbar a {
-  padding: 6px 8px 6px 16px;
-  font-family: "Birthstone", cursive;
-  text-decoration: none;
-  color: #f7e6d9;
-  font-size: 30px;
-  display: block;
-}
-
-.navbar a:hover {
-  color: rgb(47, 47, 47);
 }
 
 ul {
@@ -44,13 +29,21 @@ ul {
   list-style: none;
 }
 
-.nav-link {
-  padding: 6px 8px 6px 16px;
+.nav-links {
+  padding: 6px 8px 6px 8px;
   font-family: "Birthstone", cursive;
   text-decoration: none;
   color: #f7e6d9;
   font-size: 35px;
   display: block;
+}
+
+.nav-links:hover {
+  color: rgb(47, 47, 47);
+}
+
+.header a {
+  text-decoration: none;
 }
 
 .avatar {
@@ -61,11 +54,37 @@ ul {
 }
 
 /* about */
+.headshot {
+  height: 250px;
+  width: auto;
+}
+
 .about-paragraph {
-  line-height: 1.5;
-  text-indent: 50px;
-  letter-spacing: 2px;
-  padding: 0px 15px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  padding: 0px 30px;
+}
+
+.namecard {
+  padding: 6px 8px 6px 8px;
+  font-family: "Birthstone", cursive;
+  text-decoration: none;
+  color: #f7e6d9;
+  font-size: 35px;
+  display: block;
+}
+
+/* .about-section a {
+  text-decoration: none;
+} */
+
+.resume-button {
+  color: white;
+  text-decoration: none;
+}
+
+.resume-button:hover {
+  color: #f7e6d9;
 }
 
 /* skills */
@@ -81,7 +100,7 @@ ul {
 }
 
 /* contact me form */
-.form {
+.contact-form {
   width: 100%;
   display: flex;
   align-items: center;
@@ -91,6 +110,20 @@ ul {
 .contact-title {
   font-family: "Birthstone", cursive;
   font-size: 35px;
+}
+
+.contact-button {
+  margin: 0px 5px;
+  margin-top: 10px;
+  padding: 10px 0px;
+  width: 20%;
+  color: white;
+  background-color: rgb(47, 47, 47);
+  border-radius: 10px;
+}
+
+.contact-button:hover {
+  background-color: rgb(115, 133, 114);
 }
 
 /* footer */
@@ -103,12 +136,15 @@ ul {
   align-items: center;
 }
 
-footer a {
+.footer a {
   text-decoration: none;
+  color: #352921;
 }
 
 /* buttons */
 button {
+  margin: 0 auto;
+  padding: 0 auto;
   text-decoration: none;
   background-color: #885a3a;
   outline: none;
@@ -117,26 +153,6 @@ button {
 
 button:hover {
   color: rgb(47, 47, 47);
-}
-
-.button {
-  margin: 0px 5px;
-  margin-top: 10px;
-  padding: 10px 0px;
-  width: 20%;
-  color: white;
-  background-color: rgb(47, 47, 47);
-  border-radius: 10px;
-}
-
-.button:hover {
-  background-color: rgb(115, 133, 114);
-}
-
-.resume-button {
-  color: white;
-  text-decoration: none;
-  font-family: "Merriweather";
 }
 
 /* media queries */

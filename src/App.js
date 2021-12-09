@@ -14,14 +14,9 @@ function App() {
     if (currentPage === "About") {
       return <NameCard />;
     }
-    if (currentPage === "Skills") {
-      return <Skills />;
-    }
+
     if (currentPage === "Projects") {
       return <PortfolioCards />;
-    }
-    if (currentPage === "Education") {
-      return <Education />;
     }
   };
 

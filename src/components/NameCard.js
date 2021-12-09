@@ -1,11 +1,18 @@
 import React from "react";
 import PHResume from "./assets/PHResume.pdf";
+import PamHeadshot from "./assets/Headshot.jpg";
+import Education from "./Education";
+import Skills from "./Skills";
 
-const NameCard = () => {
+const About = () => {
   return (
     <>
-      <p className="nav-link">Pamela Hammond</p>
-      <div id="about">
+      <figure>
+        <img src={PamHeadshot} className="headshot rounded" />
+        <figcaption className="namecard">Pamela Hammond</figcaption>
+      </figure>
+
+      <div className="about-section">
         <h5>
           Full Stack Web Developer | Hammondpamelac@gmail.com |{" "}
           <a
@@ -16,11 +23,8 @@ const NameCard = () => {
             download="PamelaHammondResume"
           >
             <span>Download Resume</span>
-          </a>{" "}
+          </a>
         </h5>
-      </div>
-      <div>
-        <br />
         <h6 className="about-paragraph">
           After working within technology in higher education, I developed an
           interest in programming and completed the University of North Carolina
@@ -32,9 +36,12 @@ const NameCard = () => {
           company that will test and further my knowledge of web development.
         </h6>
         <br />
+        <Education />
+        <br />
+        <Skills />
       </div>
     </>
   );
 };
 
-export default NameCard;
+export default About;

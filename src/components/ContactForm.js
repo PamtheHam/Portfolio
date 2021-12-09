@@ -64,9 +64,9 @@ const ContactUs = () => {
   };
 
   return (
-    <div>
+    <>
       <button
-        className="nav-link"
+        className="nav-links"
         style={{ cursor: "pointer" }}
         onClick={handleOpen}
       >
@@ -80,7 +80,7 @@ const ContactUs = () => {
       >
         <Box sx={style}>
           <div id="contact">
-            <div className="form">
+            <div className="contact-form">
               <form ref={form} onSubmit={sendEmail}>
                 <p className="contact-title">Contact Me</p>
                 <label>Name</label>
@@ -109,11 +109,11 @@ const ContactUs = () => {
                   name="message"
                   onChange={handleChange}
                 />
-                <button className="button " type="submit" value="Send">
+                <button className="contact-button" type="submit" value="Send">
                   Send
                 </button>
                 <button
-                  className="button"
+                  className="contact-button"
                   type="submit"
                   value="Close"
                   onClick={handleClose}
@@ -125,7 +125,7 @@ const ContactUs = () => {
           </div>
         </Box>
       </Modal>
-    </div>
+    </>
   );
 };
 
