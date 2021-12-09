@@ -91,6 +91,7 @@ const ContactUs = () => {
                   value={formState.user_name}
                   name="user_name"
                   onChange={handleChange}
+                  required
                 />
                 <label>Email</label>
                 <TextField
@@ -100,6 +101,7 @@ const ContactUs = () => {
                   value={formState.user_email}
                   name="user_email"
                   onChange={handleChange}
+                  required
                 />
                 <label>Message</label>
                 <TextField
@@ -108,6 +110,7 @@ const ContactUs = () => {
                   value={formState.message}
                   name="message"
                   onChange={handleChange}
+                  required
                 />
                 <button className="contact-button" type="submit" value="Send">
                   Send

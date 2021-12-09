@@ -1,13 +1,13 @@
 /* element css */
 * {
-  color: #352921;
+  color: #392b58;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
 body {
-  background-color: #c9b09a;
+  background-color: white;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -19,8 +19,9 @@ main {
 
 /* header */
 .header {
-  background-color: #885a3a;
+  background-color: #b392ac;
   margin-bottom: 30px;
+  box-shadow: blueviolet 0px 0px 4px;
 }
 
 ul {
@@ -30,16 +31,17 @@ ul {
 }
 
 .nav-links {
-  padding: 6px 8px 6px 8px;
+  padding: 6px 8px;
   font-family: "Birthstone", cursive;
   text-decoration: none;
-  color: #f7e6d9;
+  color: #392b58;
   font-size: 35px;
   display: block;
 }
 
 .nav-links:hover {
-  color: rgb(47, 47, 47);
+  font-size: 37px;
+  color: #392b58;
 }
 
 .header a {
@@ -57,6 +59,11 @@ ul {
 .headshot {
   height: 250px;
   width: auto;
+  box-shadow: 8px 8px 12px black;
+}
+
+.headshot:hover {
+  box-shadow: 8px 8px 12px 3px black;
 }
 
 .about-paragraph {
@@ -66,10 +73,10 @@ ul {
 }
 
 .namecard {
-  padding: 6px 8px 6px 8px;
+  padding: 6px 8px;
   font-family: "Birthstone", cursive;
   text-decoration: none;
-  color: #f7e6d9;
+  color: #392b58;
   font-size: 35px;
   display: block;
 }
@@ -84,7 +91,7 @@ ul {
 }
 
 .resume-button:hover {
-  color: #f7e6d9;
+  color: #392b58;
 }
 
 /* skills */
@@ -146,13 +153,9 @@ button {
   margin: 0 auto;
   padding: 0 auto;
   text-decoration: none;
-  background-color: #885a3a;
+  background-color: #b392ac;
   outline: none;
   border: none;
-}
-
-button:hover {
-  color: rgb(47, 47, 47);
 }
 
 /* media queries */
