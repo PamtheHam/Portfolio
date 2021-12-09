@@ -18,23 +18,11 @@ main {
   min-height: calc(100vh - 114px);
 }
 
-/* Style page content */
-.main {
-  margin-left: 180px; /* Same as the width of the sidebar */
-}
-
 /* header */
+
 .navbar {
   background-color: #885a3a;
   margin-bottom: 30px;
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 180px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
 }
 
 .navbar a {
@@ -42,8 +30,18 @@ main {
   font-family: "Birthstone", cursive;
   text-decoration: none;
   color: #f7e6d9;
-  font-size: 35px;
+  font-size: 30px;
   display: block;
+}
+
+.navbar a:hover {
+  color: rgb(47, 47, 47);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
 
 .nav-link {
@@ -53,10 +51,6 @@ main {
   color: #f7e6d9;
   font-size: 35px;
   display: block;
-}
-
-.navbar a:hover {
-  color: rgb(47, 47, 47);
 }
 
 .avatar {
@@ -107,13 +101,10 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
 }
 
-.icon-size {
-  font-size: 35px;
-  display: inline;
-  padding: 10px;
+footer a {
+  text-decoration: none;
 }
 
 /* buttons */
