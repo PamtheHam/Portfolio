@@ -32,7 +32,7 @@ const ContactUs = () => {
     left: "50%",
     transform: "translate(-50%, -50%)",
     width: 350,
-    bgcolor: "#f7e6d9",
+    bgcolor: "white",
     border: "1px solid #000",
     boxShadow: 25,
     p: 4,
@@ -84,7 +84,7 @@ const ContactUs = () => {
             <div className="contact-form">
               <form ref={form} onSubmit={sendEmail}>
                 <p className="contact-title">Contact Me</p>
-                <label>Name</label>
+                <label className="label-color">Name</label>
                 <TextField
                   fullWidth
                   id="outlined-required"
@@ -94,7 +94,7 @@ const ContactUs = () => {
                   onChange={handleChange}
                   required
                 />
-                <label>Email</label>
+                <label className="label-color">Email</label>
                 <TextField
                   fullWidth
                   id="outlined-required"
@@ -104,7 +104,7 @@ const ContactUs = () => {
                   onChange={handleChange}
                   required
                 />
-                <label>Message</label>
+                <label className="label-color">Message</label>
                 <TextField
                   fullWidth
                   id="outline-required"
@@ -113,17 +113,19 @@ const ContactUs = () => {
                   onChange={handleChange}
                   required
                 />
-                <button className="contact-button" type="submit" value="Send">
-                  Send
-                </button>
-                <button
-                  className="contact-button"
-                  type="submit"
-                  value="Close"
-                  onClick={handleClose}
-                >
-                  Close
-                </button>
+                <div className="button-div">
+                  <button className="contact-button" type="submit" value="Send">
+                    Send
+                  </button>
+                  <button
+                    className="contact-button"
+                    type="submit"
+                    value="Close"
+                    onClick={handleClose}
+                  >
+                    Close
+                  </button>
+                </div>
               </form>
             </div>
           </div>

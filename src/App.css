@@ -27,9 +27,9 @@ main {
 
 /* header */
 .header {
-  background-color: #b392ac;
+  background-color: var(--lightPurple);
   margin-bottom: 30px;
-  box-shadow: var(--shadowColor) 0px 0px 6px;
+  box-shadow: var(--shadowColor) 0px 0px 12px;
 }
 
 ul {
@@ -42,23 +42,23 @@ ul {
   padding: 6px 8px;
   font-family: "Birthstone", cursive;
   text-decoration: none;
-  color: #392b58;
+  color: var(--darkPurple);
   font-size: 35px;
   display: block;
 }
 
 #about-link:hover {
-  text-shadow: 6px 8px 12px var(--hoverColor);
+  text-shadow: 8px 10px 16px var(--hoverColor);
   color: white;
 }
 
 #projects-link:hover {
-  text-shadow: 6px 8px 12px var(--hoverColor);
+  text-shadow: 8px 10px 16px var(--hoverColor);
   color: white;
 }
 
 #contact-link:hover {
-  text-shadow: 6px 8px 12px var(--hoverColor);
+  text-shadow: 8px 10px 16px var(--hoverColor);
   color: white;
 }
 
@@ -116,12 +116,12 @@ ul {
   padding: 6px 8px;
   font-family: "Birthstone", cursive;
   text-decoration: none;
-  color: #392b58;
+  color: var(--darkPurple);
   font-size: 30px;
 }
 
 .resume-button:hover {
-  text-shadow: 6px 4px 8px var(--hoverColor);
+  text-shadow: 6px 4px 8px var(--darkPurple);
 }
 
 /* skills */
@@ -165,38 +165,49 @@ ul {
 .contact-title {
   font-family: "Birthstone", cursive;
   font-size: 35px;
+  color: var(--darkPurple);
+}
+
+.label-color {
+  color: var(--darkPurple);
+}
+
+.button-div {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-button {
-  margin: 0px 5px;
-  margin-top: 10px;
   padding: 10px 0px;
-  width: 20%;
-  color: white;
-  background-color: rgb(47, 47, 47);
+  width: 30%;
+  color: var(--hoverColor);
+  background-color: var(--lightPurple);
   border-radius: 10px;
+  box-shadow: 6px 6px 10px var(--hoverColor);
 }
 
 .contact-button:hover {
-  background-color: rgb(115, 133, 114);
+  color: white;
+  box-shadow: 6px 8px 12px var(--hoverColor);
 }
 
 /* footer */
-.footer {
+
+.footers {
   margin-top: 30px;
-  padding: 20px;
-  background-color: #b392ac;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: var(--shadowColor) 0px 0px 6px;
+  padding: 8px;
+  background-color: var(--lightPurple);
+  box-shadow: var(--shadowColor) 0px 0px 12px;
 }
 
 .footer-link {
   font-family: "Birthstone", cursive;
   text-decoration: none;
-  color: #392b58;
+  color: var(--darkPurple);
   font-size: 20px;
+  display: block;
 }
 
 .footer-link:hover {
@@ -204,7 +215,7 @@ ul {
   color: var(--hoverColor);
 }
 
-.footer a {
+.footers a {
   text-decoration: none;
   color: var(--hoverColor);
 }
@@ -214,7 +225,7 @@ button {
   margin: 0 auto;
   padding: 0 auto;
   text-decoration: none;
-  background-color: #b392ac;
+  background-color: var(--lightPurple);
   outline: none;
   border: none;
 }
