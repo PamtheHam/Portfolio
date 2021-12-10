@@ -4,7 +4,6 @@ const Education = () => {
   return (
     <div>
       <div>
-        <h2>&lt;Education&gt;</h2>
         <div>
           <strong>University of North Carolina, Chapel Hill </strong>|
           <em> Chapel Hill, North Carolina </em>{" "}
@@ -25,7 +24,6 @@ const Education = () => {
           <strong>Fort Hays State University</strong> | <em>Hays, Kansas</em>{" "}
           <p>Bachelor of Science in Sociology (May 2018)</p>
         </div>
-        <h2>&lt;/Education&gt;</h2>
       </div>
     </div>
   );

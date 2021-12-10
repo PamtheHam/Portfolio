@@ -4,19 +4,24 @@ const Footer = () => {
   return (
     <div className="footer">
       <ul>
-        <li className="footer-link">
-          <a href="tel:816-678-1651">(816) 678-1651</a>
-        </li>
-        <li className="footer-link">
-          <a href="mailto:hammondpamelac@gmail.com">Hammondpamelac@gmail.com</a>
-        </li>
-        <li className="footer-link">
-          <a href="https://github.com/PamtheHam">
-            https://github.com/PamtheHam
+        <li>
+          <a href="tel:816-678-1651">
+            <p className="footer-link">Phone:</p> (816) 678-1651
           </a>
         </li>
-        <li className="footer-link">
+        <li>
+          <a href="mailto:hammondpamelac@gmail.com">
+            <p className="footer-link">Email:</p> Hammondpamelac@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PamtheHam">
+            <p className="footer-link">GitHub:</p> https://github.com/PamtheHam
+          </a>
+        </li>
+        <li>
           <a href="https://www.linkedin.com/in/pamelahammond94/">
+            <p className="footer-link">LinkedIn:</p>{" "}
             https://www.linkedin.com/in/pamelahammond94
           </a>
         </li>
