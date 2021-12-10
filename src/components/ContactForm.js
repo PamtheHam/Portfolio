@@ -68,6 +68,7 @@ const ContactUs = () => {
       <button
         className="nav-links"
         style={{ cursor: "pointer" }}
+        id="contact-link"
         onClick={handleOpen}
       >
         Contact

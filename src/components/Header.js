@@ -20,6 +20,7 @@ function Header({ currentPage, handlePageChange }) {
           <a
             href="#about"
             className="nav-links"
+            id="about-link"
             onClick={() => handlePageChange("About")}
           >
             About
@@ -29,6 +30,7 @@ function Header({ currentPage, handlePageChange }) {
           <a
             href="#projects"
             className="nav-links"
+            id="projects-link"
             onClick={() => handlePageChange("Projects")}
           >
             Projects

@@ -1,4 +1,12 @@
 /* element css */
+
+:root {
+  --darkPurple: #392b58;
+  --lightPurple: #b392ac;
+  --shadowColor: blueviolet;
+  --hoverColor: #0f131f;
+}
+
 * {
   color: #0f131f;
   margin: 0;
@@ -21,7 +29,7 @@ main {
 .header {
   background-color: #b392ac;
   margin-bottom: 30px;
-  box-shadow: blueviolet 0px 0px 6px;
+  box-shadow: var(--shadowColor) 0px 0px 6px;
 }
 
 ul {
@@ -39,9 +47,19 @@ ul {
   display: block;
 }
 
-.nav-links:hover {
-  font-size: 37px;
-  color: #392b58;
+#about-link:hover {
+  text-shadow: 6px 8px 12px var(--hoverColor);
+  color: white;
+}
+
+#projects-link:hover {
+  text-shadow: 6px 8px 12px var(--hoverColor);
+  color: white;
+}
+
+#contact-link:hover {
+  text-shadow: 6px 8px 12px var(--hoverColor);
+  color: white;
 }
 
 .header a {
@@ -59,17 +77,39 @@ ul {
 .headshot {
   height: 200px;
   width: auto;
-  box-shadow: 8px 8px 12px black;
+  float: left;
+  box-shadow: 6px 8px 12px var(--hoverColor);
 }
 
 .headshot:hover {
-  box-shadow: 8px 8px 12px 3px black;
+  box-shadow: 6px 8px 10px 3px var(--hoverColor);
+}
+
+.about-me {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.about-section {
+  font-size: 12px;
+  margin: auto;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section a {
+  text-decoration: none;
 }
 
 .about-paragraph {
   line-height: 1.25;
   letter-spacing: 1px;
   padding: 0px 30px;
+  font-size: 14px;
 }
 
 .namecard {
@@ -77,21 +117,11 @@ ul {
   font-family: "Birthstone", cursive;
   text-decoration: none;
   color: #392b58;
-  font-size: 35px;
-  display: block;
-}
-
-/* .about-section a {
-  text-decoration: none;
-} */
-
-.resume-button {
-  color: white;
-  text-decoration: none;
+  font-size: 30px;
 }
 
 .resume-button:hover {
-  color: #392b58;
+  text-shadow: 6px 4px 8px var(--hoverColor);
 }
 
 /* skills */
@@ -159,7 +189,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: blueviolet 0px 0px 6px;
+  box-shadow: var(--shadowColor) 0px 0px 6px;
 }
 
 .footer-link {
@@ -171,12 +201,12 @@ ul {
 
 .footer-link:hover {
   font-size: 21px;
-  color: #392b58;
+  color: var(--hoverColor);
 }
 
 .footer a {
   text-decoration: none;
-  color: #392b58;
+  color: var(--hoverColor);
 }
 
 /* buttons */

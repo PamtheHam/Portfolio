@@ -10,11 +10,6 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="mailto:hammondpamelac@gmail.com">
-            <p className="footer-link">Email:</p> Hammondpamelac@gmail.com
-          </a>
-        </li>
-        <li>
           <a href="https://github.com/PamtheHam">
             <p className="footer-link">GitHub:</p> https://github.com/PamtheHam
           </a>
