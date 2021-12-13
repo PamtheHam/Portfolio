@@ -19,8 +19,8 @@ const About = () => {
   return (
     <>
       <div className="about-me">
-        <div>
-          <div className="float-left">
+        <div className="photo-container">
+          <div className="figure">
             <figure>
               <img src={PamHeadshot} className="headshot rounded" />
               <figcaption className="figure-caption">Pamela Hammond</figcaption>
@@ -28,8 +28,8 @@ const About = () => {
           </div>
         </div>
 
-        <div>
-          <div className="float-right">
+        <div className="intro-container">
+          <div className="intro-div">
             <p className="about-title">
               <strong>Full Stack Web Developer</strong>
             </p>
@@ -53,21 +53,20 @@ const About = () => {
             </p>
           </div>
         </div>
-        </div>
+      </div>
 
+      <div className="about-section">
         <div>
-          <div className="about-section">
-            <p className="about-paragraph">
-              After working within technology in higher education, I developed
-              an interest in programming and completed the University of North
-              Carolina at Chapel Hill Coding Bootcamp for Full Stack Web
-              Development. Experience in HTML, CSS, JavaScript, Express.js,
-              NoSQL, MongoDB, React.js and more. I enjoy being challenged and
-              consider myself a lifelong student. Looking for the perfect match
-              with a company that will test and further my knowledge of web
-              development.
-            </p>
-          </div>
+          <p className="about-paragraph">
+            After working within technology in higher education, I developed an
+            interest in programming and completed the University of North
+            Carolina at Chapel Hill Coding Bootcamp for Full Stack Web
+            Development. Experience in HTML, CSS, JavaScript, Express.js, NoSQL,
+            MongoDB, React.js and more. I enjoy being challenged and consider
+            myself a lifelong student. Looking for the perfect match with a
+            company that will test and further my knowledge of web development.
+          </p>
+        </div>
       </div>
 
       <div>

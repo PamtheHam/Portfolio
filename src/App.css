@@ -75,9 +75,8 @@ ul {
 
 /* about */
 .headshot {
-  height: 200px;
+  height: 250px;
   width: auto;
-  float: left;
   box-shadow: 6px 8px 12px var(--hoverColor);
 }
 
@@ -87,10 +86,49 @@ ul {
 
 .about-me {
   margin: auto;
-  width: 75%;
+  width: 85%;
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.about-me a {
+  text-decoration: none;
+}
+
+.photo-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.figure-caption {
+  padding: 6px;
+  font-family: "Birthstone", cursive;
+  text-decoration: none;
+  color: var(--darkPurple);
+  font-size: 30px;
+}
+
+.intro-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title {
+  font-size: 22px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .about-section {
@@ -102,20 +140,6 @@ ul {
   justify-content: center;
 }
 
-.about-title {
-  font-size: 22px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.about-section a {
-  text-decoration: none;
-}
-
-.resume-button:hover {
-  text-shadow: 6px 4px 8px var(--darkPurple);
-}
-
 .about-paragraph {
   line-height: 1.25;
   letter-spacing: 1px;
@@ -123,12 +147,8 @@ ul {
   font-size: 14px;
 }
 
-.figure-caption {
-  padding: 6px 8px;
-  font-family: "Birthstone", cursive;
-  text-decoration: none;
-  color: var(--darkPurple);
-  font-size: 30px;
+.resume-button:hover {
+  text-shadow: 6px 4px 8px var(--darkPurple);
 }
 
 /* skills */
