@@ -2,8 +2,9 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div>
-      <div>
+    <>
+      <div className="education-container">
+        <h3 className="education-title">Education</h3>
         <div>
           <strong>University of North Carolina, Chapel Hill </strong>|
           <em> Chapel Hill, North Carolina </em>{" "}
@@ -25,7 +26,7 @@ const Education = () => {
           <p>Bachelor of Science in Sociology (May 2018)</p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

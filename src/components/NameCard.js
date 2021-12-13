@@ -18,38 +18,41 @@ const Grid = styled(MuiGrid)(({ theme }) => ({
 const About = () => {
   return (
     <>
-      <div>
-        <div className="about-me">
+      <div className="about-me">
+        <div>
           <div className="float-left">
             <figure>
               <img src={PamHeadshot} className="headshot rounded" />
-              <figcaption className="namecard">Pamela Hammond</figcaption>
+              <figcaption className="figure-caption">Pamela Hammond</figcaption>
             </figure>
           </div>
+        </div>
 
-          <div className="about-section">
-            <div className="float-right">
-              <p>Full Stack Web Developer</p>
-              <p>
-                <a
-                  href="mailto:hammondpamelac@gmail.com"
-                  className="resume-button"
-                >
-                  <span>Hammondpamelac@gmail.com</span>
-                </a>{" "}
-                |{" "}
-                <a
-                  href={PHResume}
-                  rel="noreferrer"
-                  target="_blank"
-                  className="resume-button"
-                  download="PamelaHammondResume"
-                >
-                  <span>Resume</span>
-                </a>
-              </p>
-            </div>
+        <div>
+          <div className="float-right">
+            <p className="about-title">
+              <strong>Full Stack Web Developer</strong>
+            </p>
+            <p>
+              <a
+                href="mailto:hammondpamelac@gmail.com"
+                className="resume-button"
+              >
+                <span>Hammondpamelac@gmail.com</span>
+              </a>{" "}
+              |{" "}
+              <a
+                href={PHResume}
+                rel="noreferrer"
+                target="_blank"
+                className="resume-button"
+                download="PamelaHammondResume"
+              >
+                <span>Resume</span>
+              </a>
+            </p>
           </div>
+        </div>
         </div>
 
         <div>
@@ -58,14 +61,13 @@ const About = () => {
               After working within technology in higher education, I developed
               an interest in programming and completed the University of North
               Carolina at Chapel Hill Coding Bootcamp for Full Stack Web
-              Development. Experience in HTML, CSS, JavaScript, Node.js,
-              Express.js, MySQL, NoSQL, MongoDB, React.js and more. I enjoy
-              being challenged and consider myself a lifelong student. Looking
-              for the perfect match with a company that will test and further my
-              knowledge of web development.
+              Development. Experience in HTML, CSS, JavaScript, Express.js,
+              NoSQL, MongoDB, React.js and more. I enjoy being challenged and
+              consider myself a lifelong student. Looking for the perfect match
+              with a company that will test and further my knowledge of web
+              development.
             </p>
           </div>
-        </div>
       </div>
 
       <div>
