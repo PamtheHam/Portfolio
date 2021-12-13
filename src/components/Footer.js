@@ -6,18 +6,23 @@ const Footer = () => {
       <ul className="footer-ul">
         <li className="footer-link">
           <a href="tel:816-678-1651">
-            <p>Phone:</p> <span>(816) 678-1651</span>
+            <span className="icon">
+              <i className="fas fa-phone"></i>
+            </span>
           </a>
         </li>
         <li className="footer-link">
           <a href="https://github.com/PamtheHam">
-            <p>GitHub:</p> <span>https://github.com/PamtheHam</span>
+            <span className="icon">
+              <i className="fab fa-github"></i>
+            </span>
           </a>
         </li>
         <li className="footer-link">
           <a href="https://www.linkedin.com/in/pamelahammond94/">
-            <p>LinkedIn:</p>{" "}
-            <span>https://www.linkedin.com/in/pamelahammond94</span>
+            <span className="icon">
+              <i className="fab fa-linkedin-in"></i>
+            </span>
           </a>
         </li>
       </ul>
