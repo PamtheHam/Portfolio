@@ -4,6 +4,7 @@ import { init } from "emailjs-com";
 import TextField from "@mui/material/TextField";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 init("user_lcufqfwTCpILtUaUtiswB");
 
 const ContactUs = () => {
@@ -12,6 +13,8 @@ const ContactUs = () => {
     user_email: "",
     message: "",
   });
+
+  const [showModal, setShowModal] = useState(false);
   const form = useRef();
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -31,7 +34,7 @@ const ContactUs = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 350,
+    width: 400,
     bgcolor: "white",
     border: "1px solid #000",
     boxShadow: 25,
@@ -54,7 +57,8 @@ const ContactUs = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
+        setShowModal(true)
       );
     setFormState({
       user_name: "",
@@ -127,6 +131,35 @@ const ContactUs = () => {
                   </button>
                 </div>
               </form>
+              {showModal && (
+                <div>
+                  <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="modal-message-successful"
+                    aria-describedby="message successful modal"
+                  >
+                    <Box sx={style}>
+                      <Typography
+                        id="modal-modal-title"
+                        variant="h6"
+                        component="h2"
+                      >
+                        Your message was sent successfully and I'll get back to
+                        you as soon as possible. Thank you!
+                      </Typography>
+                      <button
+                        type="button"
+                        className="contact-button"
+                        data-dismiss="modal"
+                        onClick={() => setShowModal(false)}
+                      >
+                        Close
+                      </button>
+                    </Box>
+                  </Modal>
+                </div>
+              )}
             </div>
           </div>
         </Box>
