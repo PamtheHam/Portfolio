@@ -136,8 +136,8 @@ const ContactUs = () => {
                   <Modal
                     open={open}
                     onClose={handleClose}
-                    aria-labelledby="modal-message-successful"
-                    aria-describedby="message successful modal"
+                    aria-labelledby="message successful modal"
+                    aria-describedby="message successful"
                   >
                     <Box sx={style}>
                       <Typography

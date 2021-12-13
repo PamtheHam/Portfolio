@@ -86,7 +86,7 @@ ul {
 
 .about-me {
   margin: auto;
-  width: 85%;
+  width: 90%;
   display: flex;
   justify-content: center;
 }
@@ -206,6 +206,27 @@ ul {
 }
 
 /* projects */
+
+.projects-container {
+  margin: auto;
+  width: 85%;
+  justify-content: center;
+}
+
+.projects-title {
+  margin: auto;
+  margin-bottom: 2px;
+  width: 85%;
+  justify-content: center;
+}
+
+.single-image {
+  border: black solid 2px;
+}
+
+.image-bar {
+  border-top: black solid 2px;
+}
 
 /* contact me form */
 .contact-form {
