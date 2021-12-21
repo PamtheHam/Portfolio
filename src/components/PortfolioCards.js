@@ -14,7 +14,7 @@ const PortfolioCards = () => {
   return (
     <>
       <div className="projects-container">
-        <h2 className="projects-title">Projects</h2>
+        <h1 className="projects-title">Projects</h1>
         <ImageList className="image-list">
           {itemData.map((item) => (
             <ImageListItem className="single-image" key={item.img}>
@@ -41,38 +41,50 @@ const PortfolioCards = () => {
 const itemData = [
   {
     img: TaskTrackerImg,
-    title: "Task Tracker",
-    link: "https://pamtheham-task-tracker.herokuapp.com/",
+    title: (
+      <a href="https://pamtheham-task-tracker.herokuapp.com/">Task Tracker</a>
+    ),
+    link: "GitHub Repo: https://github.com/PamtheHam/practice-react-task-tracker",
   },
   {
     img: ExpressNoteTakerImg,
-    title: "Express Note Taker",
-    link: "https://github.com/PamtheHam/Express-Note-Taker",
+    title: (
+      <a href="https://pamtheham.github.io/Express-Note-Taker/">
+        Express Note Taker
+      </a>
+    ),
+    link: "GitHub Repo: https://github.com/PamtheHam/Express-Note-Taker",
   },
   {
     img: PFFImg,
-    title: "Platonic Friends Forever",
-    link: "https://pfforever.herokuapp.com",
+    title: (
+      <a href="https://pfforever.herokuapp.com">Platonic Friends Forever</a>
+    ),
+    link: "GitHub Repo: https://github.com/PamtheHam/platonic-friends-forever",
   },
   {
     img: SkyGazerImg,
-    title: "Sky Gazer",
-    link: "https://pamtheham.github.io/Sky-Gazer/",
+    title: <a href="https://pamtheham.github.io/Sky-Gazer/">Sky Gazer</a>,
+    link: "GitHub Repo: https://github.com/PamtheHam/Sky-Gazer",
   },
   {
     img: FitnessTrackerImg,
-    title: "Fitness Tracker",
-    link: "https://pamtheham-workout-tracker.herokuapp.com/?id=618998dd53fa23f2d97684bc",
+    title: (
+      <a href="https://pamtheham-workout-tracker.herokuapp.com/">
+        Workout Tracker
+      </a>
+    ),
+    link: "GitHub Repo: https://github.com/PamtheHam/Workout-Tracker",
   },
   {
     img: ReadMeImg,
-    title: "ReadMe",
-    link: "https://github.com/PamtheHam/README-Generator",
+    title: <a href="https://github.com/PamtheHam/README-Generator">ReadMe</a>,
+    link: "GitHub Repo: https://github.com/PamtheHam/README-Generator",
   },
   {
     img: VodUImg,
-    title: "VodU",
-    link: "https://vodu2.herokuapp.com/",
+    title: <a href="https://vodu2.herokuapp.com/">VodU</a>,
+    link: "GitHub Repo: https://github.com/Copernichris/Final-Project",
   },
 ];
 

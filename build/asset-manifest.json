@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b515611c.chunk.css",
-    "main.js": "/Portfolio/static/js/main.f6881833.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.f6881833.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.3f8fda6e.chunk.css",
+    "main.js": "/Portfolio/static/js/main.0ab2b1c2.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.0ab2b1c2.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.c65a14fc.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c65a14fc.js.map",
-    "static/js/2.6772642f.chunk.js": "/Portfolio/static/js/2.6772642f.chunk.js",
-    "static/js/2.6772642f.chunk.js.map": "/Portfolio/static/js/2.6772642f.chunk.js.map",
+    "static/js/2.5ff31319.chunk.js": "/Portfolio/static/js/2.5ff31319.chunk.js",
+    "static/js/2.5ff31319.chunk.js.map": "/Portfolio/static/js/2.5ff31319.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.b515611c.chunk.css.map": "/Portfolio/static/css/main.b515611c.chunk.css.map",
-    "static/js/2.6772642f.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.6772642f.chunk.js.LICENSE.txt",
+    "static/css/main.3f8fda6e.chunk.css.map": "/Portfolio/static/css/main.3f8fda6e.chunk.css.map",
+    "static/js/2.5ff31319.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.5ff31319.chunk.js.LICENSE.txt",
+    "static/media/ExpressNoteTaker.d9d14ea9.png": "/Portfolio/static/media/ExpressNoteTaker.d9d14ea9.png",
+    "static/media/FitnessTracker.7367321b.PNG": "/Portfolio/static/media/FitnessTracker.7367321b.PNG",
     "static/media/Headshot.42d892e0.jpg": "/Portfolio/static/media/Headshot.42d892e0.jpg",
-    "static/media/PHResume.3d54aa79.pdf": "/Portfolio/static/media/PHResume.3d54aa79.pdf"
+    "static/media/PFF.66611ec2.png": "/Portfolio/static/media/PFF.66611ec2.png",
+    "static/media/PHResume.3d54aa79.pdf": "/Portfolio/static/media/PHResume.3d54aa79.pdf",
+    "static/media/ReactTaskTracker.bc8c9acc.png": "/Portfolio/static/media/ReactTaskTracker.bc8c9acc.png",
+    "static/media/ReadMeGenerator.24ffbbcf.png": "/Portfolio/static/media/ReadMeGenerator.24ffbbcf.png",
+    "static/media/SkyGazer.e9c76ac8.png": "/Portfolio/static/media/SkyGazer.e9c76ac8.png",
+    "static/media/VodU.7d307e71.PNG": "/Portfolio/static/media/VodU.7d307e71.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.c65a14fc.js",
-    "static/js/2.6772642f.chunk.js",
-    "static/css/main.b515611c.chunk.css",
-    "static/js/main.f6881833.chunk.js"
+    "static/js/2.5ff31319.chunk.js",
+    "static/css/main.3f8fda6e.chunk.css",
+    "static/js/main.0ab2b1c2.chunk.js"
   ]
 }
