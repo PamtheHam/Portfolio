@@ -1,5 +1,5 @@
 import React from "react";
-import PHResume from "./assets/PHResume.pdf";
+import PHResume from "./assets/PamelaHammondResume.pdf";
 import PamHeadshot from "./assets/Headshot.jpg";
 import Education from "./Education";
 import Skills from "./Skills";
@@ -30,15 +30,13 @@ const About = () => {
 
         <div className="intro-container">
           <div className="intro-div">
-            <p className="about-title">
-              <strong>Full Stack Web Developer</strong>
-            </p>
+            <p className="about-title">Full Stack Web Developer</p>
             <p>
               <a
                 href="mailto:hammondpamelac@gmail.com"
                 className="resume-button"
               >
-                <span>Hammondpamelac@gmail.com</span>
+                <span className="title-links">Hammondpamelac@gmail.com</span>
               </a>{" "}
               |{" "}
               <a
@@ -48,7 +46,7 @@ const About = () => {
                 className="resume-button"
                 download="PamelaHammondResume"
               >
-                <span>Resume</span>
+                <span className="title-links">Resume</span>
               </a>
             </p>
             <p className="about-paragraph">

@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Patrick Hand", cursive;
 }
 
 body {
@@ -40,7 +41,7 @@ ul {
 
 .nav-links {
   padding: 6px 8px;
-  font-family: "Birthstone", cursive;
+  font-family: "Patrick Hand SC", cursive;
   text-decoration: none;
   color: var(--darkPurple);
   font-size: 35px;
@@ -108,10 +109,10 @@ ul {
 
 .figure-caption {
   padding: 6px;
-  font-family: "Birthstone", cursive;
+  font-family: "Patrick Hand SC", cursive;
   text-decoration: none;
   color: var(--darkPurple);
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .intro-container {
@@ -126,16 +127,26 @@ ul {
 }
 
 .about-title {
-  font-size: 22px;
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 24px;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.title-links {
+  font-family: "Patrick Hand SC", cursive;
 }
 
 .about-paragraph {
   line-height: 1.25;
   letter-spacing: 1px;
   padding: 0px 30px;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.resume-button {
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 20px;
 }
 
 .resume-button:hover {
@@ -161,6 +172,7 @@ ul {
   justify-content: center;
 }
 .skills-title {
+  font-family: "Patrick Hand SC", cursive;
   margin: auto;
   margin-bottom: 2px;
   width: 85%;
@@ -199,6 +211,7 @@ ul {
 }
 
 .education-title {
+  font-family: "Patrick Hand SC", cursive;
   margin: auto;
   margin-bottom: 2px;
   width: 85%;
@@ -214,6 +227,7 @@ ul {
 }
 
 .projects-title {
+  font-family: "Patrick Hand SC", cursive;
   margin: auto;
   margin-bottom: 30px;
   width: 85%;
@@ -237,7 +251,7 @@ ul {
 }
 
 .contact-title {
-  font-family: "Birthstone", cursive;
+  font-family: "Patrick Hand SC", cursive;
   font-size: 35px;
   color: var(--darkPurple);
 }
@@ -281,7 +295,6 @@ ul {
 }
 
 .footer-link {
-  font-family: "Birthstone", cursive;
   text-decoration: none;
   color: var(--darkPurple);
   font-size: 30px;

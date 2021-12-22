@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3f8fda6e.chunk.css",
-    "main.js": "/Portfolio/static/js/main.0ab2b1c2.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.0ab2b1c2.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.055fed8c.chunk.css",
+    "main.js": "/Portfolio/static/js/main.f42051bc.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.f42051bc.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.c65a14fc.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c65a14fc.js.map",
     "static/js/2.5ff31319.chunk.js": "/Portfolio/static/js/2.5ff31319.chunk.js",
     "static/js/2.5ff31319.chunk.js.map": "/Portfolio/static/js/2.5ff31319.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.3f8fda6e.chunk.css.map": "/Portfolio/static/css/main.3f8fda6e.chunk.css.map",
+    "static/css/main.055fed8c.chunk.css.map": "/Portfolio/static/css/main.055fed8c.chunk.css.map",
     "static/js/2.5ff31319.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.5ff31319.chunk.js.LICENSE.txt",
     "static/media/ExpressNoteTaker.d9d14ea9.png": "/Portfolio/static/media/ExpressNoteTaker.d9d14ea9.png",
     "static/media/FitnessTracker.7367321b.PNG": "/Portfolio/static/media/FitnessTracker.7367321b.PNG",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.c65a14fc.js",
     "static/js/2.5ff31319.chunk.js",
-    "static/css/main.3f8fda6e.chunk.css",
-    "static/js/main.0ab2b1c2.chunk.js"
+    "static/css/main.055fed8c.chunk.css",
+    "static/js/main.f42051bc.chunk.js"
   ]
 }
