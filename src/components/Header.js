@@ -1,11 +1,21 @@
 import React from "react";
-import Box from "@mui/material/Box";
+import { Avatar } from "@mui/material";
+import PamHeadshot from "./assets/Headshot.jpg";
 import ContactUs from "./ContactForm";
 
 function Header({ currentPage, handlePageChange }) {
   return (
-    <Box className="header">
-      <ul className="nav justify-content-center">
+    <nav className="header">
+      {/* <Avatar
+        alt="Pamela Hammond"
+        src={PamAvatar}
+        sx={{
+          width: 100,
+          height: 100,
+        }}
+        variant="square"
+      /> */}
+      <ul>
         <li>
           <a
             href="#about"
@@ -30,7 +40,7 @@ function Header({ currentPage, handlePageChange }) {
           <ContactUs />
         </li>
       </ul>
-    </Box>
+    </nav>
   );
 }
 

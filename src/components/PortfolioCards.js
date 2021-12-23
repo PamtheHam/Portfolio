@@ -3,6 +3,7 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
 import ExpressNoteTakerImg from "./assets/ExpressNoteTaker.png";
 import PFFImg from "./assets/PFF.png";
 import TaskTrackerImg from "./assets/ReactTaskTracker.png";
