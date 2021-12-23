@@ -34,8 +34,8 @@ const ContactUs = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
-    bgcolor: "white",
+    width: "auto",
+    bgcolor: "snow",
     border: "1px solid #000",
     boxShadow: 25,
     p: 4,
@@ -140,14 +140,15 @@ const ContactUs = () => {
                     aria-describedby="message successful"
                   >
                     <Box sx={style}>
-                      <Typography
+                      <p
                         id="modal-modal-title"
                         variant="h6"
                         component="h2"
+                        className="contact-message"
                       >
                         Your message was sent successfully and I'll get back to
                         you as soon as possible. Thank you!
-                      </Typography>
+                      </p>
                       <button
                         type="button"
                         className="contact-button"

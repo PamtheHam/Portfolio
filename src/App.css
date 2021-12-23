@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: snow;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -78,52 +78,15 @@ ul {
 .headshot {
   height: 250px;
   width: auto;
-  box-shadow: 6px 8px 12px var(--hoverColor);
+  box-shadow: 8px 10px 8px var(--hoverColor);
 }
 
 .headshot:hover {
-  box-shadow: 6px 8px 10px 3px var(--hoverColor);
-}
-
-.about-me {
-  margin: auto;
-  width: 90%;
-  display: flex;
-  justify-content: center;
+  box-shadow: 10px 12px 8px var(--hoverColor);
 }
 
 .about-me a {
   text-decoration: none;
-}
-
-.photo-container {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.figure {
-  display: flex;
-  flex-direction: column;
-}
-
-.figure-caption {
-  padding: 6px;
-  font-family: "Patrick Hand SC", cursive;
-  text-decoration: none;
-  color: var(--darkPurple);
-  font-size: 24px;
-}
-
-.intro-container {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.intro-div {
-  display: flex;
-  flex-direction: column;
 }
 
 .about-title {
@@ -133,8 +96,18 @@ ul {
   padding-bottom: 0;
 }
 
+.resume-button {
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 24px;
+}
+
+.resume-button:hover {
+  text-shadow: 6px 4px 8px var(--darkPurple);
+}
+
 .title-links {
   font-family: "Patrick Hand SC", cursive;
+  font-size: 20px;
 }
 
 .about-paragraph {
@@ -142,15 +115,6 @@ ul {
   letter-spacing: 1px;
   padding: 0px 30px;
   font-size: 16px;
-}
-
-.resume-button {
-  font-family: "Patrick Hand SC", cursive;
-  font-size: 20px;
-}
-
-.resume-button:hover {
-  text-shadow: 6px 4px 8px var(--darkPurple);
 }
 
 /* grid */
@@ -254,6 +218,12 @@ ul {
   font-family: "Patrick Hand SC", cursive;
   font-size: 35px;
   color: var(--darkPurple);
+}
+
+.contact-message {
+  font-family: "Patrick Hand", cursive;
+  color: var(--darkPurple);
+  font-size: 22px;
 }
 
 .label-color {

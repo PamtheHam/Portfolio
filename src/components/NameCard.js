@@ -6,6 +6,8 @@ import Skills from "./Skills";
 import { styled } from "@mui/material/styles";
 import MuiGrid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
 
 const Grid = styled(MuiGrid)(({ theme }) => ({
   width: "100%",
@@ -18,52 +20,48 @@ const Grid = styled(MuiGrid)(({ theme }) => ({
 const About = () => {
   return (
     <>
-      <div className="about-me">
-        <div className="photo-container">
-          <div className="figure">
-            <figure>
-              <img src={PamHeadshot} className="headshot rounded" />
-              <figcaption className="figure-caption">Pamela Hammond</figcaption>
-            </figure>
-          </div>
-        </div>
+      <Container className="about-me">
+        <Box>
+          <figure>
+            <img src={PamHeadshot} className="headshot rounded" />
+          </figure>
+        </Box>
 
-        <div className="intro-container">
-          <div className="intro-div">
-            <p className="about-title">Full Stack Web Developer</p>
-            <p>
-              <a
-                href="mailto:hammondpamelac@gmail.com"
-                className="resume-button"
-              >
-                <span className="title-links">Hammondpamelac@gmail.com</span>
-              </a>{" "}
-              |{" "}
-              <a
-                href={PHResume}
-                rel="noreferrer"
-                target="_blank"
-                className="resume-button"
-                download="PamelaHammondResume"
-              >
-                <span className="title-links">Resume</span>
-              </a>
-            </p>
-            <p className="about-paragraph">
-              After working within technology in higher education, I developed
-              an interest in programming and completed the University of North
-              Carolina at Chapel Hill Coding Bootcamp for Full Stack Web
-              Development. Experience in HTML, CSS, JavaScript, Express.js,
-              NoSQL, MongoDB, React.js and more. I enjoy being challenged and
-              consider myself a lifelong student. Looking for the perfect match
-              with a company that will test and further my knowledge of web
-              development.
-            </p>
-          </div>
-        </div>
-      </div>
+        <Container>
+          <p className="about-title">
+            Pamela Hammond | Full Stack Web Developer
+          </p>
+          <p>
+            <a href="mailto:hammondpamelac@gmail.com" className="resume-button">
+              <span className="title-links">Hammondpamelac@gmail.com |</span>
+            </a>
+            <a
+              href={PHResume}
+              rel="noreferrer"
+              target="_blank"
+              className="resume-button"
+              download="PamelaHammondResume"
+            >
+              <span className="title-links"> Resume</span>
+            </a>
+          </p>
+        </Container>
+      </Container>
 
-      <div className="grid-container">
+      <Container>
+        <p className="about-paragraph">
+          Dedicated and efficient full stack developer with experience in HTML,
+          CSS, JavaScript, Node.js, Express.js, MySQL, NoSQL, MongoDB, React.js
+          and more. After working within technology in higher education, I
+          developed an interest in programming and completed the University of
+          North Carolina at Chapel Hill Coding Bootcamp for Full Stack Web
+          Development in 2021. Enjoys being challenged and is continuously
+          learning. Eager to find the perfect match with a company to excel as a
+          full stack developer.
+        </p>
+      </Container>
+
+      <Box className="grid-container">
         <Grid container>
           <Grid item md>
             <Skills />
@@ -73,7 +71,7 @@ const About = () => {
             <Education />
           </Grid>
         </Grid>
-      </div>
+      </Box>
     </>
   );
 };
