@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footers">
-      <ul className="footer-ul">
+    <div className="custom-footer">
+      <ul className="footer-ul nav">
         <li className="footer-link">
           <a href="tel:816-678-1651">
             <span className="icon">
