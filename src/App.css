@@ -40,11 +40,10 @@ ul {
 }
 
 .nav-links {
-  padding: 6px 8px;
   font-family: "Patrick Hand SC", cursive;
   text-decoration: none;
   color: var(--darkPurple);
-  font-size: 35px;
+  font-size: 32px;
   display: block;
 }
 
@@ -65,13 +64,6 @@ ul {
 
 .header a {
   text-decoration: none;
-}
-
-.avatar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 /* about */
@@ -122,7 +114,6 @@ ul {
 .grid-container {
   margin: auto;
   padding-top: 20px;
-  width: 85%;
   display: flex;
   justify-content: center;
 }
@@ -138,8 +129,7 @@ ul {
 .skills-title {
   font-family: "Patrick Hand SC", cursive;
   margin: auto;
-  margin-bottom: 2px;
-  width: 85%;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
 }
@@ -177,7 +167,7 @@ ul {
 .education-title {
   font-family: "Patrick Hand SC", cursive;
   margin: auto;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   width: 85%;
   justify-content: center;
 }
@@ -298,11 +288,11 @@ button {
 @media only screen and (max-width: 768px) {
 }
 
-@media only screen and (max-height: 480px) {
-  .navbar {
-    padding-top: 15px;
+@media only screen and (max-width: 480px) {
+  .title-links {
+    font-size: 18px;
   }
-  .navbar a {
+  .about-title {
     font-size: 18px;
   }
 }

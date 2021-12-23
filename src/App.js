@@ -4,8 +4,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NameCard from "./components/NameCard";
 import PortfolioCards from "./components/PortfolioCards";
-import Education from "./components/Education";
-import Skills from "./components/Skills";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("About");

@@ -23,7 +23,11 @@ const About = () => {
       <Container className="about-me">
         <Box>
           <figure>
-            <img src={PamHeadshot} className="headshot rounded" />
+            <img
+              src={PamHeadshot}
+              alt="Pamela Hammond"
+              className="headshot rounded"
+            />
           </figure>
         </Box>
 

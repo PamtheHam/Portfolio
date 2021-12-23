@@ -4,7 +4,6 @@ import { init } from "emailjs-com";
 import TextField from "@mui/material/TextField";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 init("user_lcufqfwTCpILtUaUtiswB");
 
 const ContactUs = () => {
@@ -34,11 +33,11 @@ const ContactUs = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "auto",
+    width: "80%",
     bgcolor: "snow",
     border: "1px solid #000",
     boxShadow: 25,
-    p: 4,
+    p: 3,
   };
 
   const sendEmail = (e) => {
