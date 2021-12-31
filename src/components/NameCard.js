@@ -9,6 +9,7 @@ import Divider from "@mui/material/Divider";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 
+
 const Grid = styled(MuiGrid)(({ theme }) => ({
   width: "100%",
   ...theme.typography.body2,
@@ -29,6 +30,7 @@ const About = () => {
               className="headshot rounded"
             />
           </figure>
+
         </Box>
 
         <Container>

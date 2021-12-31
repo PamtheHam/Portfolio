@@ -73,6 +73,13 @@ ul {
   box-shadow: 8px 10px 8px var(--hoverColor);
 }
 
+.namecard-intro {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
 .headshot:hover {
   box-shadow: 10px 12px 8px var(--hoverColor);
 }
