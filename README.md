@@ -2,13 +2,10 @@
 
 This webpage is dedicated to all of my most valued work and is a reflection of my unique personality and talents. I styled the page using React.js. I included links to my social media accounts including Github and LinkedIn.
 
-## Pictures of Application
+Please visit : https://pamtheham.github.io/Portfolio/
 
-![Screenshot of my portfolio]()
 
-Here is the link to my [Deployed Application](https://pamtheham.github.io/React-Portfolio/)
-
-<br>
+![Screenshot of my portfolio](./src/components/assets/PortfolioScreenshot.JPG)
 
 ## Table of Contents
 
@@ -43,4 +40,6 @@ The biggest challenge of this project was determining how to design my portfolio
 
 ## Contact Information
 
-If you have any questions about this project, please email me here: Hammondpamelac@gmail.com. My GitHub username is: www.github.com/PamtheHam
+If you have any questions about this project, please email me here: Hammondpamelac@gmail.com. 
+
+My GitHub username is: www.github.com/PamtheHam
