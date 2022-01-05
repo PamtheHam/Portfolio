@@ -9,7 +9,6 @@ import Divider from "@mui/material/Divider";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 
-
 const Grid = styled(MuiGrid)(({ theme }) => ({
   width: "100%",
   ...theme.typography.body2,
@@ -21,38 +20,37 @@ const Grid = styled(MuiGrid)(({ theme }) => ({
 const About = () => {
   return (
     <>
-      <Container className="about-me">
-        <Box>
+      <div className="about-me">
+        <div className="container">
           <figure>
-            <img
-              src={PamHeadshot}
-              alt="Pamela Hammond"
-              className="headshot rounded"
-            />
+            <img src={PamHeadshot} alt="Pamela Hammond" className="headshot" />
           </figure>
+        </div>
 
-        </Box>
-
-        <Container>
-          <p className="about-title">
-            Pamela Hammond | Full Stack Web Developer
-          </p>
-          <p>
-            <a href="mailto:hammondpamelac@gmail.com" className="resume-button">
-              <span className="title-links">Hammondpamelac@gmail.com |</span>
-            </a>
-            <a
-              href={PHResume}
-              rel="noreferrer"
-              target="_blank"
-              className="resume-button"
-              download="PamelaHammondResume"
-            >
-              <span className="title-links"> Resume</span>
-            </a>
-          </p>
-        </Container>
-      </Container>
+        <div className="container">
+          <div>
+            <p className="about-title">Pamela Hammond</p>
+            <p className="about-title">Full Stack Developer</p>
+            <p>
+              <a
+                href="mailto:hammondpamelac@gmail.com"
+                className="resume-button"
+              >
+                <span className="title-links">Hammondpamelac@gmail.com |</span>
+              </a>
+              <a
+                href={PHResume}
+                rel="noreferrer"
+                target="_blank"
+                className="resume-button"
+                download="PamelaHammondResume"
+              >
+                <span className="title-links"> Resume</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
 
       <Container>
         <p className="about-paragraph">

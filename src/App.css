@@ -67,18 +67,34 @@ ul {
 }
 
 /* about */
+
+.about-me {
+  padding: 1em;
+  width: 75%;
+  display: inline-flex;
+}
+
+.container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: auto;
+}
+
 .headshot {
-  height: 250px;
+  height: 280px;
   width: auto;
+  border-radius: 60%;
   box-shadow: 8px 10px 8px var(--hoverColor);
 }
 
-.namecard-intro {
+/* .namecard-intro {
   width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
-}
+} */
 
 .headshot:hover {
   box-shadow: 10px 12px 8px var(--hoverColor);
