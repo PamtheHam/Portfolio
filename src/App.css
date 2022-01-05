@@ -318,4 +318,11 @@ button {
   .about-title {
     font-size: 18px;
   }
+
+  .container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
 }
