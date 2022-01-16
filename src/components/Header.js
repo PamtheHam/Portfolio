@@ -1,5 +1,4 @@
 import React from "react";
-import ContactUs from "./ContactForm";
 import { Navbar } from "react-bootstrap";
 import { Container } from "@mui/material";
 
@@ -7,11 +6,23 @@ function Header({ currentPage, handlePageChange }) {
   return (
     <Navbar className="header ">
       <Container>
-        <ul>
+        <ul className="header-list">
+          <li>
+            <a
+              href="#home"
+              className="nav-links"
+              style={{ cursor: "pointer" }}
+              id="home-link"
+              onClick={() => handlePageChange("Home")}
+            >
+              Home
+            </a>
+          </li>
           <li>
             <a
               href="#about"
               className="nav-links"
+              style={{ cursor: "pointer" }}
               id="about-link"
               onClick={() => handlePageChange("About")}
             >
@@ -22,6 +33,7 @@ function Header({ currentPage, handlePageChange }) {
             <a
               href="#projects"
               className="nav-links"
+              style={{ cursor: "pointer" }}
               id="projects-link"
               onClick={() => handlePageChange("Projects")}
             >
@@ -29,7 +41,15 @@ function Header({ currentPage, handlePageChange }) {
             </a>
           </li>
           <li>
-            <ContactUs />
+            <a
+              href="#contact"
+              className="nav-links"
+              style={{ cursor: "pointer" }}
+              id="contact-link"
+              onClick={() => handlePageChange("Contact")}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </Container>

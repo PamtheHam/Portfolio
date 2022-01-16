@@ -20,14 +20,14 @@ const Grid = styled(MuiGrid)(({ theme }) => ({
 const About = () => {
   return (
     <>
-      <div className="about-me">
+      <Container className="about-me">
         <div className="container">
           <figure>
             <img src={PamHeadshot} alt="Pamela Hammond" className="headshot" />
           </figure>
         </div>
 
-        <div className="container">
+        <Container className="container">
           <div>
             <p className="about-title">Pamela Hammond</p>
             <p className="about-title">Full Stack Developer</p>
@@ -49,8 +49,8 @@ const About = () => {
               </a>
             </p>
           </div>
-        </div>
-      </div>
+        </Container>
+      </Container>
 
       <Container>
         <p className="about-paragraph">

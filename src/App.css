@@ -1,14 +1,14 @@
 /* element css */
 
 :root {
-  --darkPurple: #392b58;
+  --darkPurple: black;
   --lightPurple: #b392ac;
   --shadowColor: blueviolet;
-  --hoverColor: #0f131f;
+  --hoverColor: black;
 }
 
 * {
-  color: #0f131f;
+  color: black;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -16,9 +16,8 @@
 }
 
 body {
-  background-color: snow;
+  background-color: white;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
 }
 
@@ -213,6 +212,7 @@ ul {
 
 .single-image {
   border: black solid 2px;
+  margin: 5px;
 }
 
 .image-bar {
@@ -220,10 +220,45 @@ ul {
 }
 
 /* contact me form */
+
+.contact-page {
+  display: block;
+  margin-top: 50px;
+}
+
+.contact-page-style {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  width: 60%;
+  height: auto;
+  align-items: center;
+  padding: 1em;
+}
+
+ul.contact-list {
+  display: block;
+}
+
+.form-button {
+  font-family: "Patrick Hand", cursive;
+  font-size: 18px;
+  width: 15%;
+  padding: 10px 0px;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 6px 6px 10px var(--hoverColor);
+}
+
+.form-button:hover {
+  color: white;
+  box-shadow: 6px 8px 12px var(--hoverColor);
+}
+
 .contact-form {
   width: 100%;
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   flex-direction: column;
 }
 
@@ -264,10 +299,6 @@ ul {
   box-shadow: 6px 8px 12px var(--hoverColor);
 }
 
-.modal-border {
-  border: solid 1px black;
-}
-
 /* footer */
 
 .footers {
@@ -280,7 +311,7 @@ ul {
 .footer-link {
   text-decoration: none;
   color: var(--darkPurple);
-  font-size: 30px;
+  font-size: 25px;
   display: block;
 }
 
@@ -319,10 +350,28 @@ button {
     font-size: 18px;
   }
 
+  .nav-links {
+    font-size: 24px;
+  }
+
   .container {
     display: block;
     justify-content: center;
     align-items: center;
     width: auto;
+  }
+
+  .contact-page-style {
+    align-items: center;
+    width: 90%;
+  }
+
+  .projects-container {
+    width: 90%;
+    display: block;
+  }
+
+  .single-image {
+    display: inline;
   }
 }

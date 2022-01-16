@@ -15,13 +15,13 @@ const PortfolioCards = () => {
   return (
     <Container>
       <div className="projects-container">
-        <h1 className="projects-title">Projects</h1>
+        <h1 className="projects-title">Portfolio</h1>
         <ImageList className="image-list">
           {itemData.map((item) => (
             <ImageListItem className="single-image" key={item.img}>
               <img
                 src={`${item.img}?w=248&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=4 2x`}
                 alt={item.title}
                 loading="lazy"
               />

@@ -4,17 +4,23 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NameCard from "./components/NameCard";
 import PortfolioCards from "./components/PortfolioCards";
+import ContactUs from "./components/ContactForm";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("About");
 
   const renderPage = () => {
+    if (currentPage === "Home") {
+      return <NameCard />;
+    }
     if (currentPage === "About") {
       return <NameCard />;
     }
-
     if (currentPage === "Projects") {
       return <PortfolioCards />;
+    }
+    if (currentPage === "Contact") {
+      return <ContactUs />;
     }
   };
 

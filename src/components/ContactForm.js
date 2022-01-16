@@ -33,11 +33,23 @@ const ContactUs = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "80%",
-    bgcolor: "snow",
-    border: "1px solid #000",
-    boxShadow: 25,
-    p: 3,
+    width: "50%",
+    bgcolor: "white",
+    border: "2px solid #000",
+    boxShadow: 14,
+    p: 6,
+  };
+
+  const insideModalStyle = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "40%",
+    bgcolor: "white",
+    border: "2px solid #000",
+    boxShadow: 14,
+    p: 6,
   };
 
   const sendEmail = (e) => {
@@ -68,102 +80,139 @@ const ContactUs = () => {
 
   return (
     <>
-      <button
-        className="nav-links"
-        style={{ cursor: "pointer" }}
-        id="contact-link"
-        onClick={handleOpen}
-      >
-        Contact
-      </button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="Contact Me Form"
-        aria-describedby="a modal that has input for contact information"
-      >
-        <Box sx={style}>
-          <div id="contact">
-            <div className="contact-form">
-              <form ref={form} onSubmit={sendEmail}>
-                <p className="contact-title">Contact Me</p>
-                <label className="label-color">Name</label>
-                <TextField
-                  fullWidth
-                  id="outlined-required"
-                  type="text"
-                  value={formState.user_name}
-                  name="user_name"
-                  onChange={handleChange}
-                  required
-                />
-                <label className="label-color">Email</label>
-                <TextField
-                  fullWidth
-                  id="outlined-required"
-                  type="email"
-                  value={formState.user_email}
-                  name="user_email"
-                  onChange={handleChange}
-                  required
-                />
-                <label className="label-color">Message</label>
-                <TextField
-                  fullWidth
-                  id="outline-required"
-                  value={formState.message}
-                  name="message"
-                  onChange={handleChange}
-                  required
-                />
-                <div className="button-div">
-                  <button className="contact-button" type="submit" value="Send">
-                    Send
-                  </button>
-                  <button
-                    className="contact-button"
-                    type="submit"
-                    value="Close"
-                    onClick={handleClose}
-                  >
-                    Close
-                  </button>
-                </div>
-              </form>
-              {showModal && (
-                <div>
-                  <Modal
-                    open={open}
-                    onClose={handleClose}
-                    aria-labelledby="message successful modal"
-                    aria-describedby="message successful"
-                  >
-                    <Box sx={style}>
-                      <p
-                        id="modal-modal-title"
-                        variant="h6"
-                        component="h2"
-                        className="contact-message"
-                      >
-                        Your message was sent successfully and I'll get back to
-                        you as soon as possible. Thank you!
-                      </p>
+      <div className="contact-page">
+        <div className="contact-page-style">
+          <h1>Contact Me</h1>
+          <ul className="contact-list">
+            <li>
+              <strong>Call Me: </strong>
+              <a href="tel:816-678-1651">
+                <span>(816) 678-1651</span>
+              </a>
+            </li>
+            <li>
+              <strong>Check out my GitHub: </strong>
+              <a href="https://github.com/PamtheHam">
+                <span>https://github.com/PamtheHam</span>
+              </a>
+            </li>
+            <li>
+              <strong>Connect with me on LinkedIn: </strong>
+              <a href="https://www.linkedin.com/in/pamelahammond94/">
+                <span>https://www.linkedin.com/in/pamelahammond94</span>
+              </a>
+            </li>
+            <li>
+              <strong> Email Me: </strong>
+              <a href="mailto:hammondpamelac@gmail.com">
+                <span>Hammondpamelac@gmail.com</span>
+              </a>
+            </li>
+            <br />
+            <li>Or fill out this form and I will get back to you!</li>
+          </ul>
+
+          <button
+            style={{ cursor: "pointer" }}
+            onClick={handleOpen}
+            className="form-button"
+          >
+            Contact
+          </button>
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="Contact Me Form"
+            aria-describedby="a modal that has input for contact information"
+          >
+            <Box sx={style}>
+              <div id="contact">
+                <div className="contact-form">
+                  <form ref={form} onSubmit={sendEmail}>
+                    <p className="contact-title">Contact Me</p>
+                    <label className="label-color">Name</label>
+                    <TextField
+                      fullWidth
+                      id="outlined-required"
+                      type="text"
+                      value={formState.user_name}
+                      name="user_name"
+                      onChange={handleChange}
+                      required
+                    />
+                    <label className="label-color">Email</label>
+                    <TextField
+                      fullWidth
+                      id="outlined-required"
+                      type="email"
+                      value={formState.user_email}
+                      name="user_email"
+                      onChange={handleChange}
+                      required
+                    />
+                    <label className="label-color">Message</label>
+                    <TextField
+                      fullWidth
+                      id="outline-required"
+                      value={formState.message}
+                      name="message"
+                      onChange={handleChange}
+                      required
+                    />
+                    <div className="button-div">
                       <button
-                        type="button"
                         className="contact-button"
-                        data-dismiss="modal"
-                        onClick={() => setShowModal(false)}
+                        type="submit"
+                        value="Send"
+                      >
+                        Send
+                      </button>
+                      <button
+                        className="contact-button"
+                        type="submit"
+                        value="Close"
+                        onClick={handleClose}
                       >
                         Close
                       </button>
-                    </Box>
-                  </Modal>
+                    </div>
+                  </form>
+                  {showModal && (
+                    <div>
+                      <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="message successful modal"
+                        aria-describedby="message successful"
+                      >
+                        <Box sx={insideModalStyle}>
+                          <p
+                            id="modal-modal-title"
+                            variant="h6"
+                            component="h2"
+                            className="contact-message"
+                          >
+                            Thank you! Your message was sent successfully and
+                            I'll get back to you as soon as possible.
+                          </p>
+                          <button
+                            type="button"
+                            className="contact-button"
+                            data-dismiss="modal"
+                            onClick={(() => setShowModal(false), handleClose)}
+                          >
+                            Close
+                          </button>
+                        </Box>
+                      </Modal>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-          </div>
-        </Box>
-      </Modal>
+              </div>
+            </Box>
+          </Modal>
+        </div>
+      </div>
     </>
   );
 };
