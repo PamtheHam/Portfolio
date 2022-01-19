@@ -7,7 +7,7 @@ import PortfolioCards from "./components/PortfolioCards";
 import ContactUs from "./components/ContactForm";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("Home");
 
   const renderPage = () => {
     if (currentPage === "Home") {
