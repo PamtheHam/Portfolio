@@ -1,55 +1,52 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
 import { Container } from "@mui/material";
+import { Link } from "react-router-dom";
 
-function Header({ currentPage, handlePageChange }) {
+function Header() {
   return (
-    <Navbar className="header ">
+    <Navbar className="header">
       <Container>
         <ul className="header-list">
           <li>
-            <a
-              href="#home"
+            <Link
               className="nav-links"
               style={{ cursor: "pointer" }}
               id="home-link"
-              onClick={() => handlePageChange("Home")}
+              to="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
+            <Link
               className="nav-links"
               style={{ cursor: "pointer" }}
               id="about-link"
-              onClick={() => handlePageChange("About")}
+              to="/about"
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#projects"
+            <Link
               className="nav-links"
               style={{ cursor: "pointer" }}
               id="projects-link"
-              onClick={() => handlePageChange("Projects")}
+              to="/portfolio"
             >
-              Projects
-            </a>
+              Portfolio
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
               className="nav-links"
               style={{ cursor: "pointer" }}
               id="contact-link"
-              onClick={() => handlePageChange("Contact")}
+              to="/contact"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </Container>
