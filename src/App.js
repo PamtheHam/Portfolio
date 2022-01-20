@@ -16,10 +16,10 @@ function App() {
           <Header />
         </header>
         <main>
-          <Route path="/" element={<NameCard />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/portfolio" element={<PortfolioCards />} />
-          <Route path="/contact" element={<ContactUs />} />
+          <Route exact path="/" component={NameCard} />
+          <Route exact path="/about" component={AboutMe} />
+          <Route exact path="/portfolio" component={PortfolioCards} />
+          <Route exact path="/contact" component={ContactUs} />
         </main>
         <footer>
           <Footer />
