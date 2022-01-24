@@ -111,14 +111,15 @@ const ContactUs = () => {
             <br />
             <li>Or fill out this form and I will get back to you!</li>
           </ul>
-
-          <button
-            style={{ cursor: "pointer" }}
-            onClick={handleOpen}
-            className="form-button"
-          >
-            Contact
-          </button>
+          <div className="button-div">
+            <button
+              style={{ cursor: "pointer" }}
+              onClick={handleOpen}
+              className="form-button"
+            >
+              Contact
+            </button>
+          </div>
           <Modal
             open={open}
             onClose={handleClose}

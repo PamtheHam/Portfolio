@@ -1,64 +1,60 @@
 /* element css */
 
-:root {
-  --darkPurple: black;
-  --lightPurple: #b392ac;
-  --shadowColor: blueviolet;
-  --hoverColor: black;
-}
-
 * {
   color: black;
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: "Patrick Hand", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
-body {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
+figure {
+  margin: 0;
 }
 
-main {
-  min-height: calc(100vh - 114px);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-/* header */
-.header {
-  background-color: var(--lightPurple);
-  margin-bottom: 30px;
-  box-shadow: var(--shadowColor) 0px 0px 12px;
+p {
+  margin-bottom: 0;
 }
 
 ul {
-  display: flex;
-  justify-content: space-around;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.nav-links {
-  font-family: "Patrick Hand SC", cursive;
-  text-decoration: none;
-  color: var(--darkPurple);
-  font-size: 32px;
-  display: block;
+a {
+  color: black;
+}
+
+/* header */
+
+#home-link:hover {
+  text-shadow: 8px 10px 16px grey;
+  color: grey;
 }
 
 #about-link:hover {
-  text-shadow: 8px 10px 16px var(--hoverColor);
-  color: white;
+  text-shadow: 8px 10px 16px grey;
+  color: grey;
 }
 
 #projects-link:hover {
-  text-shadow: 8px 10px 16px var(--hoverColor);
-  color: white;
+  text-shadow: 8px 10px 16px grey;
+  color: grey;
 }
 
 #contact-link:hover {
-  text-shadow: 8px 10px 16px var(--hoverColor);
-  color: white;
+  text-shadow: 8px 10px 16px grey;
+  color: grey;
 }
 
 .header a {
@@ -73,30 +69,15 @@ ul {
   display: inline-flex;
 }
 
-.container {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: auto;
-}
-
 .headshot {
   height: 280px;
   width: auto;
   border-radius: 60%;
-  box-shadow: 8px 10px 8px var(--hoverColor);
+  box-shadow: 8px 10px 8px grey;
 }
 
-/* .namecard-intro {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-} */
-
 .headshot:hover {
-  box-shadow: 10px 12px 8px var(--hoverColor);
+  box-shadow: 10px 12px 8px grey;
 }
 
 .about-me a {
@@ -104,23 +85,20 @@ ul {
 }
 
 .about-title {
-  font-family: "Patrick Hand SC", cursive;
   font-size: 24px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .resume-button {
-  font-family: "Patrick Hand SC", cursive;
   font-size: 24px;
 }
 
 .resume-button:hover {
-  text-shadow: 6px 4px 8px var(--darkPurple);
+  text-shadow: 6px 4px 8px black;
 }
 
 .title-links {
-  font-family: "Patrick Hand SC", cursive;
   font-size: 20px;
 }
 
@@ -149,7 +127,6 @@ ul {
   justify-content: center;
 }
 .skills-title {
-  font-family: "Patrick Hand SC", cursive;
   margin: auto;
   margin-bottom: 5px;
   display: flex;
@@ -187,13 +164,11 @@ ul {
 }
 
 .education-title {
-  font-family: "Patrick Hand SC", cursive;
   margin: auto;
   margin-bottom: 5px;
   width: 85%;
   justify-content: center;
 }
-
 
 /* about */
 
@@ -224,7 +199,6 @@ ul {
   border: black double 1px;
 }
 
-
 /* projects */
 
 .projects-container {
@@ -234,7 +208,6 @@ ul {
 }
 
 .projects-title {
-  font-family: "Patrick Hand SC", cursive;
   margin: auto;
   margin-bottom: 30px;
   width: 85%;
@@ -270,21 +243,22 @@ ul {
 
 ul.contact-list {
   display: block;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 .form-button {
-  font-family: "Patrick Hand", cursive;
-  font-size: 18px;
-  width: 15%;
+  font-size: 16px;
+  width: 30%;
   padding: 10px 0px;
   border-radius: 10px;
   color: black;
-  box-shadow: 6px 6px 10px var(--hoverColor);
+  box-shadow: 6px 6px 10px grey;
 }
 
 .form-button:hover {
-  color: white;
-  box-shadow: 6px 8px 12px var(--hoverColor);
+  color: black;
+  box-shadow: 6px 8px 12px grey;
 }
 
 .contact-form {
@@ -294,19 +268,17 @@ ul.contact-list {
 }
 
 .contact-title {
-  font-family: "Patrick Hand SC", cursive;
   font-size: 35px;
-  color: var(--darkPurple);
+  color: black;
 }
 
 .contact-message {
-  font-family: "Patrick Hand", cursive;
-  color: var(--darkPurple);
+  color: black;
   font-size: 22px;
 }
 
 .label-color {
-  color: var(--darkPurple);
+  color: black;
 }
 
 .button-div {
@@ -319,41 +291,27 @@ ul.contact-list {
 .contact-button {
   padding: 10px 0px;
   width: 30%;
-  color: var(--hoverColor);
-  background-color: var(--lightPurple);
+  color: black;
   border-radius: 10px;
-  box-shadow: 6px 6px 10px var(--hoverColor);
+  box-shadow: 6px 6px 10px grey;
 }
 
 .contact-button:hover {
-  color: white;
-  box-shadow: 6px 8px 12px var(--hoverColor);
+  color: black;
+  box-shadow: 6px 8px 12px grey;
 }
 
 /* footer */
 
-.footers {
-  margin-top: 20px;
-  padding: 8px;
-  background-color: var(--lightPurple);
-  box-shadow: var(--shadowColor) 0px 0px 12px;
-}
-
 .footer-link {
   text-decoration: none;
-  color: var(--darkPurple);
-  font-size: 25px;
-  display: block;
+  color: black;
+  font-size: 20px;
 }
 
 .footer-link:hover {
-  font-size: 33px;
-  text-shadow: 8px 10px 16px var(--hoverColor);
-}
-
-.footers a {
-  text-decoration: none;
-  color: var(--hoverColor);
+  font-size: 22px;
+  text-shadow: 2px 2px 8px grey;
 }
 
 /* buttons */
@@ -361,7 +319,7 @@ button {
   margin: 0 auto;
   padding: 0 auto;
   text-decoration: none;
-  background-color: var(--lightPurple);
+  background-color: white;
   outline: none;
   border: none;
 }
@@ -374,40 +332,7 @@ button {
 }
 
 @media only screen and (max-width: 480px) {
-  .title-links {
-    font-size: 18px;
-  }
-  .about-title {
-    font-size: 18px;
-  }
-
-  .nav-links {
-    font-size: 24px;
-  }
-
-  .container {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-  }
-
-  .contact-page-style {
-    align-items: center;
-    width: 90%;
-  }
-
-  .projects-container {
-    width: 90%;
-    display: block;
-  }
-
-  .single-image {
-    display: inline;
-  }
-
-  
-  .makeup-app-pic{
+  .makeup-app-pic {
     width: auto;
     max-height: 150px;
   }
