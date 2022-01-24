@@ -18,7 +18,7 @@ function App() {
         <main>
           <Route exact path="/" component={NameCard} />
           <Route exact path="/about" component={AboutMe} />
-          <Route exact path="/portfolio" component={PortfolioCards} />
+          <Route exact path="/projects" component={PortfolioCards} />
           <Route exact path="/contact" component={ContactUs} />
         </main>
         <footer>

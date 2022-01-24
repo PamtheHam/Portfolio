@@ -33,7 +33,7 @@ function Header() {
               className="nav-links"
               style={{ cursor: "pointer" }}
               id="projects-link"
-              to="/portfolio"
+              to="/projects"
             >
               Portfolio
             </Link>
