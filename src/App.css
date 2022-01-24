@@ -194,6 +194,37 @@ ul {
   justify-content: center;
 }
 
+
+/* about */
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2em;
+  margin-top: 2em;
+  padding: 2em;
+  border: black double 4px;
+  background-color: white;
+}
+
+.about-right {
+  margin-right: 2em;
+}
+
+.makeup-app-pic {
+  width: auto;
+  max-height: 250px;
+  border: black double 1px;
+}
+
+
 /* projects */
 
 .projects-container {
@@ -373,5 +404,11 @@ button {
 
   .single-image {
     display: inline;
+  }
+
+  
+  .makeup-app-pic{
+    width: auto;
+    max-height: 150px;
   }
 }
