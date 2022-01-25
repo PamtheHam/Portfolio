@@ -196,14 +196,16 @@ const ContactUs = () => {
                             Thank you! Your message was sent successfully and
                             I'll get back to you as soon as possible.
                           </p>
-                          <button
-                            type="button"
-                            className="contact-button"
-                            data-dismiss="modal"
-                            onClick={(() => setShowModal(false), handleClose)}
-                          >
-                            Close
-                          </button>
+                          <div className="button-div">
+                            <button
+                              type="button"
+                              className="form-button"
+                              data-dismiss="modal"
+                              onClick={(() => setShowModal(false), handleClose)}
+                            >
+                              Close
+                            </button>
+                          </div>
                         </Box>
                       </Modal>
                     </div>

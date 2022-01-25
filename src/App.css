@@ -35,6 +35,11 @@ a {
   color: black;
 }
 
+button {
+  background-color: white;
+  border: none;
+}
+
 /* header */
 
 #home-link:hover {
@@ -70,7 +75,7 @@ a {
 }
 
 .headshot {
-  height: 280px;
+  height: 250px;
   width: auto;
   border-radius: 60%;
   box-shadow: 8px 10px 8px grey;
@@ -85,13 +90,13 @@ a {
 }
 
 .about-title {
-  font-size: 24px;
+  font-size: 1.5em;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .resume-button {
-  font-size: 24px;
+  font-size: 1em;
 }
 
 .resume-button:hover {
@@ -99,14 +104,14 @@ a {
 }
 
 .title-links {
-  font-size: 20px;
+  font-size: 1em;
 }
 
 .about-paragraph {
   line-height: 1.25;
   letter-spacing: 1px;
   padding: 0px 30px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 /* grid */
@@ -201,33 +206,69 @@ a {
 
 /* projects */
 
-.projects-container {
-  margin: auto;
-  width: 85%;
-  justify-content: center;
+.project-section {
+  position: relative;
+  padding: 2em 0;
 }
 
-.projects-title {
-  margin: auto;
-  margin-bottom: 30px;
-  width: 85%;
-  justify-content: center;
+.project-card {
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: auto;
 }
 
-.single-image {
-  border: black solid 2px;
-  margin: 5px;
+.project-card-view {
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  color: white;
+  background-color: transparent;
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
+  height: 100%;
 }
 
-.image-bar {
-  border-top: black solid 2px;
+.project-card-view:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+}
+
+.card-img-top {
+  padding: 1em;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+
+.project-heading {
+  color: black;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.portfolio-btn {
+  margin-top: 1em;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  width: 50%;
+  padding: 0.5em;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 6px 6px 10px grey;
+}
+
+.portfolio-btn:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 2px 2px 8px grey;
 }
 
 /* contact me form */
 
 .contact-page {
   display: block;
-  margin-top: 50px;
+  margin-top: 3em;
 }
 
 .contact-page-style {
@@ -238,7 +279,7 @@ a {
   width: 60%;
   height: auto;
   align-items: center;
-  padding: 1em;
+  padding: 2em;
 }
 
 ul.contact-list {
@@ -248,9 +289,9 @@ ul.contact-list {
 }
 
 .form-button {
-  font-size: 16px;
-  width: 30%;
-  padding: 10px 0px;
+  font-size: 1em;
+  width: 25%;
+  padding: 0.5em;
   border-radius: 10px;
   color: black;
   box-shadow: 6px 6px 10px grey;
@@ -268,13 +309,14 @@ ul.contact-list {
 }
 
 .contact-title {
-  font-size: 35px;
+  font-size: 2em;
+  padding-bottom: 1em;
   color: black;
 }
 
 .contact-message {
   color: black;
-  font-size: 22px;
+  font-size: 1.25em;
 }
 
 .label-color {
@@ -282,15 +324,16 @@ ul.contact-list {
 }
 
 .button-div {
-  margin-top: 1rem;
+  margin-top: 1em;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .contact-button {
-  padding: 10px 0px;
-  width: 30%;
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 25%;
   color: black;
   border-radius: 10px;
   box-shadow: 6px 6px 10px grey;
@@ -303,6 +346,10 @@ ul.contact-list {
 
 /* footer */
 
+footer {
+  margin-top: 1em;
+}
+
 .footer-link {
   text-decoration: none;
   color: black;
@@ -312,16 +359,6 @@ ul.contact-list {
 .footer-link:hover {
   font-size: 22px;
   text-shadow: 2px 2px 8px grey;
-}
-
-/* buttons */
-button {
-  margin: 0 auto;
-  padding: 0 auto;
-  text-decoration: none;
-  background-color: white;
-  outline: none;
-  border: none;
 }
 
 /* media queries */

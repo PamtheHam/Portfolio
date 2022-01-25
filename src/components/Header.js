@@ -12,7 +12,7 @@ function Header() {
               alt="Pamela Hammond Logo"
               src={PHLogo}
               width="auto"
-              height="70"
+              height="40"
             />
           </Link>
           <button
@@ -33,14 +33,14 @@ function Header() {
                   className="nav-link active link-dark"
                   style={{ cursor: "pointer" }}
                   id="home-link"
-                  to="/"
+                  to="/Portfolio"
                 >
                   Home
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link active link-dark"
+                  className="nav-link link-dark"
                   style={{ cursor: "pointer" }}
                   id="about-link"
                   to="/about"
@@ -50,7 +50,7 @@ function Header() {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link active link-dark"
+                  className="nav-link link-dark"
                   style={{ cursor: "pointer" }}
                   id="projects-link"
                   to="/projects"
@@ -60,7 +60,7 @@ function Header() {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link active link-dark"
+                  className="nav-link link-dark"
                   style={{ cursor: "pointer" }}
                   id="contact-link"
                   to="/contact"
