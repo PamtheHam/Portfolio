@@ -1,52 +1,75 @@
 import React from "react";
-import BlueEyelinerPic from "./assets/BlueEyelinerPH.jpg";
+import { Col, Container, Row } from "react-bootstrap";
+import RafaFlowers from "./assets/RafaFlowers.jpg";
+import PusheenSleeping from "./assets/PusheenSleeping.jpg";
+import PamSmiles from "./assets/PamSmiles.jpg";
+import PamChris from "./assets/PamChris.jpg";
 
 const AboutMe = () => {
   return (
     <>
-      <div className="intro-container">
-        <div className="my-intro">
-          <div className="text-center about-right">
-            <h3>
-              Nice to meet you. My name is Pam. <br /> Welcome to my portfolio.
-            </h3>
+      <Container className="about-section">
+        <Container className="greeting-div">
+          <Row className="my-intro">
+            <Col sm="8" className="text-center about-padding">
+              <h2>Nice to meet you. My name is Pam.</h2>
+            </Col>
+            <Col sm="4" className="about-padding">
+              <figure>
+                <img
+                  alt="Pamela Hammond"
+                  src={PamSmiles}
+                  className="about-pics"
+                />
+              </figure>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <div className="my-intro">
+            <div className="text-center">
+              <h6>
+                After working within technology in higher education, and a few
+                courses on Codecademy.com, I developed an interest in
+                programming and completed the University of North Carolina -
+                Chapel Hill’s Coding Bootcamp.
+              </h6>
+            </div>
           </div>
-          <figure>
-            <img
-              alt="Pamela Hammond"
-              src={BlueEyelinerPic}
-              className="makeup-app-pic"
-            />
-          </figure>
-        </div>
-      </div>
-      <div className="intro-container">
-        <div className="my-intro">
-          <div className="text-center about-right">
-            <h6>
-              After working within technology in higher education, I developed
-              an interest in programming and completed the University of North
-              Carolina - Chapel Hill’s Coding Bootcamp. Full-stack web developer
-              with experience working in student services within higher
-              education and the full-stack of web development. With excellent
-              attention to detail and organizational skills, I am dedicated to
-              building original and efficient web applications from start to
-              finish with proficient skills in HTML, CSS, and Javascript. I
-              enjoy being challenged and working outside of my comfort zone.
-              Looking for the perfect match with a company that will test and
-              further my knowledge of web development.
-              <br />
-              Outside of my professional roles, I enjoy traveling and exploring
-              the world. My dream is to live and work abroad, so I can
-              experience life from new perspectives. I enjoy spending time with
-              my husband Chris, my long-haired chihuahua Rafa, and my chartreux
-              cat Pusheen. I have a range of hobbies, including playing tennis,
-              solving jigsaw and crossword puzzles, and learning new programming
-              skills.
-            </h6>
+        </Container>
+        <Container>
+          <Row className="my-intro">
+            <Col className="about-padding">
+              <figure>
+                <img src={RafaFlowers} className="about-pics" />
+              </figure>
+            </Col>
+            <Col className="about-padding">
+              <figure>
+                <img src={PamChris} className="about-pics" />
+              </figure>
+            </Col>
+            <Col className="about-padding">
+              <figure>
+                <img src={PusheenSleeping} className="about-pics" />
+              </figure>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <div className="my-intro">
+            <div className="text-center">
+              <h6>
+                Outside of my professional roles, I enjoy spending time with my
+                husband Chris, my long-haired chihuahua Rafa, and my chartreux
+                cat Pusheen. I have a range of hobbies, including playing
+                tennis, solving jigsaw and crossword puzzles, curating Pinterest
+                boards, and learning new programming skills.
+              </h6>
+            </div>
           </div>
-        </div>
-      </div>
+        </Container>
+      </Container>
     </>
   );
 };

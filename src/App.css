@@ -8,6 +8,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+main {
+  min-height: calc(100vh - 114px);
+  background-color: #e5c4bf;
+}
+
 figure {
   margin: 0;
 }
@@ -42,6 +47,17 @@ button {
 
 /* header */
 
+header {
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.4);
+}
+
+#home-link,
+#about-link,
+#projects-link,
+#contact-link {
+  color: black;
+}
+
 #home-link:hover {
   text-shadow: 8px 10px 16px grey;
   color: grey;
@@ -68,16 +84,18 @@ button {
 
 /* about */
 
-.about-me {
-  padding: 1em;
-  width: 75%;
-  display: inline-flex;
+.home-section {
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 .headshot {
-  height: 250px;
   width: auto;
-  border-radius: 60%;
+  max-height: 300px;
+  border-radius: 50%;
+  border: black double 2px;
+
   box-shadow: 8px 10px 8px grey;
 }
 
@@ -85,14 +103,8 @@ button {
   box-shadow: 10px 12px 8px grey;
 }
 
-.about-me a {
-  text-decoration: none;
-}
-
 .about-title {
-  font-size: 1.5em;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  font-size: 2em;
 }
 
 .resume-button {
@@ -100,108 +112,66 @@ button {
 }
 
 .resume-button:hover {
-  text-shadow: 6px 4px 8px black;
-}
-
-.title-links {
-  font-size: 1em;
+  text-shadow: 2px 2px 8px grey;
 }
 
 .about-paragraph {
-  line-height: 1.25;
+  line-height: 1.5;
   letter-spacing: 1px;
-  padding: 0px 30px;
   font-size: 1em;
-}
-
-/* grid */
-
-.grid-container {
-  margin: auto;
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
 }
 
 /* skills */
 
 .skills-grid {
-  margin: auto;
-  width: 85%;
   display: flex;
   justify-content: center;
 }
+
 .skills-title {
-  margin: auto;
-  margin-bottom: 5px;
+  font-weight: 700;
+  padding-bottom: 0.5em;
   display: flex;
   justify-content: center;
-}
-
-.frontEndList {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.frontEndSkills {
-  display: flex;
-  flex-direction: column;
-}
-
-.backEndList {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.backEndSkills {
-  display: flex;
-  flex-direction: column;
 }
 
 /* education section */
 
-.education-container {
-  margin: auto;
-  width: 85%;
-  justify-content: center;
-}
-
 .education-title {
-  margin: auto;
-  margin-bottom: 5px;
-  width: 85%;
+  font-weight: 700;
+  padding-bottom: 0.5em;
+  display: flex;
   justify-content: center;
 }
 
 /* about */
 
-.intro-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about-section {
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 .my-intro {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 2em;
   margin-top: 2em;
   padding: 2em;
-  border: black double 4px;
-  background-color: white;
+  border: 3px double grey;
 }
 
 .about-right {
   margin-right: 2em;
+  padding: 1em;
 }
 
-.makeup-app-pic {
+.about-pics {
   width: auto;
   max-height: 250px;
-  border: black double 1px;
+  border: black double 2px;
 }
 
 /* projects */
@@ -220,8 +190,6 @@ button {
 
 .project-card-view {
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
-  color: white;
-  background-color: transparent;
   opacity: 0.9;
   transition: all 0.5s ease 0s;
   height: 100%;
@@ -267,26 +235,29 @@ button {
 /* contact me form */
 
 .contact-page {
-  display: block;
-  margin-top: 3em;
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 .contact-page-style {
-  display: inline-block;
+  background-color: white;
+  display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000;
-  width: 60%;
-  height: auto;
-  align-items: center;
+  margin: 0 2em;
+  margin-top: 2em;
   padding: 2em;
+  border: 3px double grey;
+  overflow: auto;
+  word-wrap: break-word;
 }
 
-ul.contact-list {
+/* ul.contact-list {
   display: block;
   line-height: 1.5em;
   text-align: center;
-}
+} */
 
 .form-button {
   font-size: 1em;
@@ -369,8 +340,22 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-  .makeup-app-pic {
+  .about-pics,
+  .headshot {
     width: auto;
-    max-height: 150px;
+    max-height: 200px;
+  }
+
+  .about-padding {
+    padding: 1em 0;
+  }
+
+  .form-button {
+    width: 50%;
+  }
+
+  .intro-links {
+    overflow: auto;
+    word-wrap: break-word;
   }
 }

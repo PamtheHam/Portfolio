@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
-const PortfolioCards = (props) => {
+const ProjectCards = (props) => {
   return (
     <>
       <Card className="project-card-view">
@@ -26,4 +26,4 @@ const PortfolioCards = (props) => {
   );
 };
 
-export default PortfolioCards;
+export default ProjectCards;

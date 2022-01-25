@@ -5,8 +5,8 @@ const Skills = () => {
     <>
       <h3 className="skills-title">Skills</h3>
       <div className="skills-grid">
-        <div className="frontEndList">
-          <ul className="frontEndSkills">
+        <div>
+          <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -18,9 +18,8 @@ const Skills = () => {
             <li>Material UI</li>
           </ul>
         </div>
-
-        <div className="backEndList">
-          <ul className="backEndSkills">
+        <div>
+          <ul>
             <li>Node.js</li>
             <li>Express.js</li>
             <li>GraphQL</li>
