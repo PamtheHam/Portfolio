@@ -5,14 +5,12 @@ import Education from "./Education";
 import Skills from "./Skills";
 import { Col, Container, Row } from "react-bootstrap";
 
-
-
 const Home = () => {
   return (
     <>
       <Container className="home-section">
         <Container className="greeting-div">
-          <Row className="my-intro">
+          <Row className="my-intro-2">
             <Col sm="5" className="about-padding">
               <figure>
                 <img
