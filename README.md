@@ -4,8 +4,7 @@ This webpage is dedicated to all of my most valued work and is a reflection of m
 
 Please visit : https://pamtheham.github.io/Portfolio/
 
-
-![Screenshot of my portfolio](./src/components/assets/PortfolioScreenshot.JPG)
+![Screenshot of my portfolio](./src/components/assets/PortfolioScreenshot.png)
 
 ## Table of Contents
 
@@ -40,6 +39,6 @@ The biggest challenge of this project was determining how to design my portfolio
 
 ## Contact Information
 
-If you have any questions about this project, please email me here: Hammondpamelac@gmail.com. 
+If you have any questions about this project, please email me here: Hammondpamelac@gmail.com.
 
 My GitHub username is: www.github.com/PamtheHam
