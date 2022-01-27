@@ -32,6 +32,16 @@ const Footer = () => {
               </span>
             </a>
           </li>
+          <li className="nav-item">
+            <a
+              className="nav-link footer-link"
+              href="https://www.pinterest.com/PamtheHam_/"
+            >
+              <span className="icon">
+                <i className="fab fa-pinterest"></i>
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
